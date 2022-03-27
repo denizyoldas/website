@@ -1,6 +1,8 @@
 {
   "name": "website",
   "version": "0.1.0",
+  "author": "Deniz Aksu <daksu30@gmail.com>",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",

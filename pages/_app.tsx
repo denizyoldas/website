@@ -1,38 +1,45 @@
-import Head from 'next/head';
-import Header from 'components/header';
-import Footer from 'components/footer';
-import { ThemeProvider } from 'next-themes';
-import { Provider, CachePolicies } from 'use-http';
+import Head from "next/head";
+import Header from "components/header";
+import Footer from "components/footer";
+import { ThemeProvider } from "next-themes";
+import { Provider, CachePolicies } from "use-http";
 
-import 'styles/globals.css';
+import "styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const options = {
     interceptors: {
       request: async ({ options, url, path, route }) => {
-        console.log('METHOD:', options.method);
+        console.log("METHOD:", options.method);
         return options;
       },
       response: async ({ response }) => {
-        console.log('response', response);
+        console.log("response", response);
         return response;
       },
     },
   };
 
   return (
-    <ThemeProvider attribute='class'>
+    <ThemeProvider attribute="class">
       <Provider url={process.env.NEXT_PUBLIC_API_URL} options={options}>
-        <Head>
-          <title>Deniz Aksu</title>
-          <meta name='viewport' content='width=device-width, initial-scale=1' />
-        </Head>
+        <main className="bg-light dark:bg-dark dark:text-white min-h-screen transition-colors duration-100">
+          <Head>
+            <title>Deniz Aksu</title>
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
+          </Head>
 
-        <Header />
-        <main className='pt-14 pb-20'>
-          <Component {...pageProps} />
+          <Header />
+
+          <main className="prose container w-full md:mx-auto px-4 dark:prose-invert">
+            <Component {...pageProps} />
+          </main>
+
+          <Footer />
         </main>
-        <Footer />
       </Provider>
     </ThemeProvider>
   );
