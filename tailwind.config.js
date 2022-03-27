@@ -1,10 +1,33 @@
+const colors = require("tailwindcss/colors");
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
+  mode: "jit",
+  darkMode: "class",
+  purge: {
+    content: [
+      "./pages/**/*.{js,ts,jsx,tsx}",
+      "./components/**/*.{js,ts,jsx,tsx}",
+    ],
+    options: {
+      keyframes: false,
+    },
   },
-  plugins: [],
-}
+  theme: {
+    extend: {
+      colors: {
+        gray: colors.gray,
+        dark: '#000000',
+				light: '#fcfefd',
+      },
+      // fontFamily: {
+      //   sans: ["Inter", ...fontFamily.sans],
+      // },
+    },
+  },
+  variants: {
+    extend: {
+      opacity: ["disabled"],
+    },
+  },
+};
