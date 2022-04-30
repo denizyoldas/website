@@ -53,7 +53,9 @@ function Header() {
     <header className="prose dark:prose-invert container mx-auto p-4 pb-5 flex flex-col">
       <div className="flex flex-row">
         <Link href="/" passHref>
-          <code className="text-base md:text-2xl">deniz@aksu:$ </code>
+          <code className="text-base md:text-2xl font-bold text-black dark:text-white">
+            deniz@aksu:$
+          </code>
         </Link>
         <input
           className=" w-full ml-2 text-base md:text-2xl focus-visible:outline-none font-mono bg-light dark:bg-dark"

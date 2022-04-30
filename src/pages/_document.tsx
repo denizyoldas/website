@@ -1,5 +1,5 @@
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
-import { meta } from "../site.config";
+import { meta } from "../../site.config";
 
 export default class MyDocument extends NextDocument {
   static getInitialProps(ctx) {

@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Header from "components/header";
-import Footer from "components/footer";
+import Header from "src/components/header";
+import Footer from "src/components/footer";
 import { ThemeProvider } from "next-themes";
 import { Provider, CachePolicies } from "use-http";
 
-import "styles/globals.css";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const options = {
@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
 
           <Header />
 
-          <main className="prose container w-full md:mx-auto px-4 dark:prose-invert">
+          <main className="prose container w-full md:mx-auto px-4 dark:prose-invert dark:text-white">
             <Component {...pageProps} />
           </main>
 
