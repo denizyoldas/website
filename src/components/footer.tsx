@@ -1,5 +1,5 @@
 import React from "react";
-import A from "components/UI/a";
+import A from "src/components/UI/a";
 
 function Footer() {
   return (
@@ -13,7 +13,7 @@ function Footer() {
         >
           @denizyoldas
         </A>
-        ; hosted on 
+        ; hosted on
         <A href="https://vercel.com" blank={true}>
           Vercel
         </A>
