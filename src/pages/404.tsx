@@ -6,6 +6,7 @@ function Error() {
       <Head>
         <title>404 Not Found</title>
       </Head>
+      <h1>Command not found</h1>
     </>
   );
 }

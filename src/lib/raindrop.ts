@@ -24,6 +24,8 @@ export default class Raindrop {
 
   public async getBookmarks(page: number = 0): Promise<IBookmark[]> {
     console.log(this.getGeneratePath(page));
+
+    debugger;
     const res = await fetch(this.getGeneratePath(page), {
       method: "GET",
       headers: {
@@ -33,11 +35,16 @@ export default class Raindrop {
 
     const data = await res.json();
 
-    if (data.items.length === this.perPage) {
-      return data.items.concat(await this.getBookmarks(page + 1));
-    } else {
-      return data.items;
-    }
+    console.log(data);
+    debugger;
+
+    // if (data.items.length === this.perPage) {
+    //   return data.items.concat(await this.getBookmarks(page + 1));
+    // } else {
+    //   return data.items;
+    // }
+
+    return [];
   }
 
   public async getBookmarksGroupByWeek(): Promise<{
