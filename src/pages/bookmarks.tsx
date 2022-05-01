@@ -15,7 +15,7 @@ export async function getStaticProps() {
   const data = await raindrop.getBookmarksGroupByWeek();
 
   return {
-    props: { data, year: format(dateStartOfWeek, "yyyy") },
+    props: { data: [], year: format(dateStartOfWeek, "yyyy") },
     revalidate: ms("1h") / 1000,
   };
 }
