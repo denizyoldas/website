@@ -1,6 +1,6 @@
-import { useRouter } from "next/router";
-import Link from "next/link";
-import cx from "classnames";
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+import cx from 'classnames';
 
 function NavItem({ href, children }) {
   const { pathname } = useRouter();
@@ -10,9 +10,9 @@ function NavItem({ href, children }) {
     <Link href={href}>
       <a
         className={cx(
-          "px-2 py-1 rounded",
+          'px-2 py-1 rounded dark:text-white no-underline',
           isActive &&
-            "text-gray-900 bg-gray-100 dark:text-white dark:bg-gray-800"
+            'text-gray-900 bg-gray-200 dark:text-white dark:bg-gray-800'
         )}
       >
         {children}
