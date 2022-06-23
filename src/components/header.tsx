@@ -5,8 +5,7 @@ import { WithTarget } from 'src/types/d';
 
 const MENU = {
   '/': 'Ana Sayfa',
-  '/about': 'Hakkımda',
-  '/bookmarks': 'Yer İmleri',
+  // '/bookmarks': 'Yer İmleri',
   '/blog': 'Blog',
 };
 
