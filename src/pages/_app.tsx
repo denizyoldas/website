@@ -1,20 +1,20 @@
-import Head from "next/head";
-import Header from "src/components/header";
-import Footer from "src/components/footer";
-import { ThemeProvider } from "next-themes";
-import { Provider, CachePolicies } from "use-http";
+import Head from 'next/head';
+import Header from 'src/components/header';
+import Footer from 'src/components/footer';
+import { ThemeProvider } from 'next-themes';
+import { Provider, CachePolicies } from 'use-http';
 
-import "../styles/globals.css";
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   const options = {
     interceptors: {
       request: async ({ options, url, path, route }) => {
-        console.log("METHOD:", options.method);
+        console.log('METHOD:', options.method);
         return options;
       },
       response: async ({ response }) => {
-        console.log("response", response);
+        console.log('response', response);
         return response;
       },
     },

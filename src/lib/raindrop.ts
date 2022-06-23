@@ -1,6 +1,6 @@
-import { format, parseISO } from "date-fns";
-import { IBookmark } from "src/types/bookmark";
-import groupBy from "lodash.groupby";
+import { format, parseISO } from 'date-fns';
+import { IBookmark } from 'src/types/bookmark';
+import groupBy from 'lodash.groupby';
 
 export default class Raindrop {
   public collectionId: number = 15611214;
@@ -19,15 +19,12 @@ export default class Raindrop {
       `&collectionId=${this.collectionId}`,
       `&search=created:>${this.created}`,
       `&sort=-created`,
-    ].join("");
+    ].join('');
   }
 
   public async getBookmarks(page: number = 0): Promise<IBookmark[]> {
-    console.log(this.getGeneratePath(page));
-
-    debugger;
     const res = await fetch(this.getGeneratePath(page), {
-      method: "GET",
+      method: 'GET',
       headers: {
         Authorization: `Bearer ${process.env.RAINDROP_ACCESS_TOKEN}`,
       },
@@ -35,8 +32,8 @@ export default class Raindrop {
 
     const data = await res.json();
 
+    console.log(process.env.RAINDROP_ACCESS_TOKEN);
     console.log(data);
-    debugger;
 
     // if (data.items.length === this.perPage) {
     //   return data.items.concat(await this.getBookmarks(page + 1));
@@ -55,9 +52,9 @@ export default class Raindrop {
 
     return groupBy(bookmarks, (bookmark: IBookmark) => {
       const dateISO = parseISO(bookmark.created);
-      const week = format(dateISO, "I"); // ISO Week of Year (1-53)
-      const month = format(dateISO, "M"); // Month (1-12)
-      if (month === "1" && ["52", "53"].includes(week)) return 0;
+      const week = format(dateISO, 'I'); // ISO Week of Year (1-53)
+      const month = format(dateISO, 'M'); // Month (1-12)
+      if (month === '1' && ['52', '53'].includes(week)) return 0;
       return week;
     });
   }
