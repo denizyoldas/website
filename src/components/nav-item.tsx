@@ -1,10 +1,10 @@
-import { useRouter } from 'next/router';
-import Link from 'next/link';
-import cx from 'classnames';
+import { useRouter } from 'next/router'
+import Link from 'next/link'
+import cx from 'classnames'
 
 function NavItem({ href, children }) {
-  const { pathname } = useRouter();
-  const isActive = href === pathname;
+  const { pathname } = useRouter()
+  const isActive = href === pathname
 
   return (
     <Link href={href}>
@@ -18,7 +18,7 @@ function NavItem({ href, children }) {
         {children}
       </a>
     </Link>
-  );
+  )
 }
 
-export default NavItem;
+export default NavItem
