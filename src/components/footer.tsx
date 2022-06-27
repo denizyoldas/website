@@ -1,5 +1,5 @@
-import React from 'react';
-import A from 'src/components/UI/a';
+import React from 'react'
+import A from 'src/components/UI/a'
 
 function Footer() {
   return (
@@ -17,14 +17,14 @@ function Footer() {
         ; hosted on{' '}
         <A href="https://vercel.com" blank={true}>
           Vercel
-        </A>{' '}
+        </A>
         ;{' '}
         <A href="referance" blank={false}>
           Reference
         </A>
       </span>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

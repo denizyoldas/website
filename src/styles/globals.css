@@ -5,3 +5,7 @@
 /* .prose {
   max-width: 65ch;
 } */
+
+/* body {
+  transition: background-color 1s ease-in-out;
+} */
