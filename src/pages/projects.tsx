@@ -8,7 +8,7 @@ const PROJECTS: IProject[] = [
     description: 'Vue kullanarak freelance olarak geliştirdiğim bir kelime oyunu. Kısaca satırda veya sütünda aynı harf bulunmaması ve okunduğunda anlamlı bir cümle oluşması kurallarına dayanan bir oyun.',
     url: 'https://wordonce.com/',
     image: '/wordonce.png',
-    technologies: ['Vue', 'TypeScript', 'Pinia', 'Vite'],
+    technologies: ['Vue', 'TypeScript', 'Pinia', 'Vite', 'sass'],
     createdAt: new Date('2022-04-20')
   },
   {
@@ -16,9 +16,24 @@ const PROJECTS: IProject[] = [
     description: 'Bir case olarak gelen ve yaparken keyif aldığım. Kendim için geliştirdiğim bir otel puanlama ekleme uygulaması',
     url: 'https://github.com/denizyoldas/hotel-app',
     image: '/hotel-app.png',
-    technologies: ['React', 'TypeScript'],
+    technologies: ['React', 'TypeScript', 'Tailwindcss'],
     createdAt: new Date('2022-06-20')
   },
+  {
+    name: 'Screen Record App',
+    description: 'Electron js kullanarak geliştirdiğim ekran kayıt uygulaması. Ekranın sesini ve bilgisayarın mikrofonundan gelen sesi kayıt altına alıp belirlenen dosyaya mp4 uzantılı bir çıktı alarak izlemenize olanak sağlıyor.',
+    url: '#',
+    image: '/no-image.webp',
+    technologies: ['Electron', 'Bulma', 'JavaScript'],
+    createdAt: new Date('2022-04-24')
+  },
+  {
+    name: 'ToDo App',
+    description: 'React Native kullanarak geliştirdiğim bir not tutma uygulaması. Genel olarak ios uyumlu bir app olarak basit düzeyde not tutmaya yardımcı bir uygulama',
+    url: 'https://github.com/denizyoldas/todo-app',
+    image: '/no-image.webp',
+    technologies: ['React Native', 'Chakra UI', 'TypeScript', 'Jotai']
+  }
 ]
 
 const Projects = () => {
