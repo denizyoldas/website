@@ -4,65 +4,21 @@ import { IProject } from 'src/types/project'
 
 const PROJECTS: IProject[] = [
   {
-    name: 'React',
-    description: 'React is a JavaScript library for building user interfaces.',
-    url: 'https://reactjs.org/',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png',
-    technologies: ['React', 'TypeScript', 'JavaScript'],
-    createdAt: new Date('2020-01-01')
+    name: 'Wordonce Game',
+    description: 'Vue kullanarak freelance olarak geliştirdiğim bir kelime oyunu. Kısaca satırda veya sütünda aynı harf bulunmaması ve okunduğunda anlamlı bir cümle oluşması kurallarına dayanan bir oyun.',
+    url: 'https://wordonce.com/',
+    image: '/wordonce.png',
+    technologies: ['Vue', 'TypeScript', 'Pinia', 'Vite'],
+    createdAt: new Date('2022-04-20')
   },
   {
-    name: 'Vue',
-    description:
-      'Vue.js is a progressive JavaScript framework for building user interfaces.',
-    url: 'https://vuejs.org/',
-    // image: 'https://cdn.worldvectorlogo.com/logos/vue.svg',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png',
-    technologies: ['Vue', 'TypeScript', 'JavaScript'],
-    createdAt: new Date('2020-01-01')
+    name: 'Hotel App',
+    description: 'Bir case olarak gelen ve yaparken keyif aldığım. Kendim için geliştirdiğim bir otel puanlama ekleme uygulaması',
+    url: 'https://github.com/denizyoldas/hotel-app',
+    image: '/hotel-app.png',
+    technologies: ['React', 'TypeScript'],
+    createdAt: new Date('2022-06-20')
   },
-  {
-    name: 'React',
-    description: 'React is a JavaScript library for building user interfaces.',
-    url: 'https://reactjs.org/',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png',
-    technologies: ['React', 'TypeScript', 'JavaScript'],
-    createdAt: new Date('2020-01-01')
-  },
-  {
-    name: 'Vue',
-    description:
-      'Vue.js is a progressive JavaScript framework for building user interfaces.',
-    url: 'https://vuejs.org/',
-    // image: 'https://cdn.worldvectorlogo.com/logos/vue.svg',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png',
-    technologies: ['Vue', 'TypeScript', 'JavaScript'],
-    createdAt: new Date('2020-01-01')
-  },
-  {
-    name: 'React',
-    description: 'React is a JavaScript library for building user interfaces.',
-    url: 'https://reactjs.org/',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png',
-    technologies: ['React', 'TypeScript', 'JavaScript'],
-    createdAt: new Date('2020-01-01')
-  },
-  {
-    name: 'Vue',
-    description:
-      'Vue.js is a progressive JavaScript framework for building user interfaces.',
-    url: 'https://vuejs.org/',
-    // image: 'https://cdn.worldvectorlogo.com/logos/vue.svg',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png',
-    technologies: ['Vue', 'TypeScript', 'JavaScript'],
-    createdAt: new Date('2020-01-01')
-  }
 ]
 
 const Projects = () => {
