@@ -69,7 +69,7 @@ const Projects = () => {
   return (
     <>
       <h3 className="underline underline-offset-4 pt-3">Projeler</h3>
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {PROJECTS.map(project => (
           <ProjectItem key={project.name} {...project} />
         ))}
