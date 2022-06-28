@@ -32,7 +32,8 @@ const PROJECTS: IProject[] = [
     description: 'React Native kullanarak geliştirdiğim bir not tutma uygulaması. Genel olarak ios uyumlu bir app olarak basit düzeyde not tutmaya yardımcı bir uygulama',
     url: 'https://github.com/denizyoldas/todo-app',
     image: '/no-image.webp',
-    technologies: ['React Native', 'Chakra UI', 'TypeScript', 'Jotai']
+    technologies: ['React Native', 'Chakra UI', 'TypeScript', 'Jotai'],
+    createdAt: new Date('2022-05-13')
   }
 ]
 
