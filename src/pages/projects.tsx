@@ -12,6 +12,14 @@ const PROJECTS: IProject[] = [
     createdAt: new Date('2022-04-20')
   },
   {
+    name: 'Portfolio',
+    description: 'React js kullanarak youtube da gördüklerime ekleyerek oluşturdum eski portfolio sitem.',
+    url: 'portfolio-denizyoldas.vercel.app',
+    image: '/portfolio.png',
+    technologies: ['React', 'sass', 'css'],
+    createdAt: new Date('2021-10-27')
+  },
+  {
     name: 'Hotel App',
     description: 'Bir case olarak gelen ve yaparken keyif aldığım. Kendim için geliştirdiğim bir otel puanlama ekleme uygulaması',
     url: 'https://github.com/denizyoldas/hotel-app',
