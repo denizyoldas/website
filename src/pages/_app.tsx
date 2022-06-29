@@ -2,11 +2,12 @@ import Head from 'next/head'
 import Header from 'src/components/header'
 import Footer from 'src/components/footer'
 import { ThemeProvider } from 'next-themes'
-import { Provider, CachePolicies } from 'use-http'
+import { Provider } from 'use-http'
+import { AnimatePresence, motion } from 'framer-motion'
 
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   const options = {
     interceptors: {
       request: async ({ options, url, path, route }) => {
@@ -19,6 +20,13 @@ function MyApp({ Component, pageProps }) {
       }
     }
   }
+
+  const spring = {
+    type: "spring",
+    damping: 20,
+    stiffness: 100,
+    when: "afterChildren"
+  };
 
   return (
     <ThemeProvider attribute="class">
@@ -35,7 +43,16 @@ function MyApp({ Component, pageProps }) {
           <Header />
 
           <main className="prose container w-full md:mx-auto px-4 dark:prose-invert dark:text-white">
-            <Component {...pageProps} />
+            <AnimatePresence exitBeforeEnter initial={true}>
+              <motion.div
+                key={router.pathname}
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Component {...pageProps} key={router.pathname} />
+              </motion.div>
+            </AnimatePresence>
           </main>
 
           <Footer />
@@ -46,3 +63,4 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp
+
