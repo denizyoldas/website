@@ -15,7 +15,7 @@ const ThemeToggle = () => {
       exit={{ y: 20, opacity: 0 }}
       transition={{ duration: 0.3 }}
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="bg-purple-400 dark:bg-blue-400 p-2 rounded-md"
+      className="bg-purple-400 hover:bg-purple-300 dark:bg-blue-400 p-2 rounded-md hover:dark:bg-blue-300"
     >
       {theme === 'light' ? (
         <BsFillMoonFill color="white" />
