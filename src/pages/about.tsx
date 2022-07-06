@@ -2,9 +2,10 @@ import React from 'react'
 import AboutExperiances from 'src/components/about-experiances'
 
 const SKILLS = [
-  'Angular 8 - 10 - 11',
+  'Angular',
   'Angular.js',
   'React',
+  'React Native',
   'Vue',
   'JQuery',
   'Electron',
@@ -30,9 +31,9 @@ const AboutPage = () => {
       <h4 className="underline underline-offset-3">Deneyim</h4>
       <AboutExperiances />
       <h4 className="underline underline-offset-3 pt-3">Yetenekler</h4>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 text-center">
         {SKILLS.map(item => (
-          <span key={item}>{item}</span>
+          <span className='bg-slate-500 rounded-lg' key={item}>{item}</span>
         ))}
       </div>
     </>
