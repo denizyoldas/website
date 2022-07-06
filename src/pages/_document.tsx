@@ -21,7 +21,7 @@ export default class MyDocument extends NextDocument {
           <meta content="#ffffff" name="msapplication-TileColor" />
 
           <script async src="https://gumroad.com/js/gumroad.js" />
-
+          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
           {/* analytic */}
           {meta.ga && (
             <>
