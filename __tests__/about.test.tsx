@@ -11,9 +11,10 @@ describe('<About> About Page', () => {
   it('check skills', () => {
     render(<About />)
     const SKILLS = [
-      'Angular 8 - 10 - 11',
+      'Angular',
       'Angular.js',
       'React',
+      'React Native',
       'Vue',
       'JQuery',
       'Electron',

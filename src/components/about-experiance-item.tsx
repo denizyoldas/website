@@ -7,9 +7,10 @@ interface Props {
 }
 
 const AboutExperianceItem: React.FC<Props> = ({ title, subTitle, detailList }) => {
-  return <div>
-    <h5>{title}</h5>
-    <h6>{subTitle}</h6>
+  return (
+ <div className='border-b-2 border-slate-500'>
+    <h3 className='font-bold mb-0'>{title}</h3>
+    <h6 className='font-extralight'>{subTitle}</h6>
     <ul>
       {detailList.map((item, index) => (
         <li key={index}>
@@ -20,6 +21,7 @@ const AboutExperianceItem: React.FC<Props> = ({ title, subTitle, detailList }) =
       ))}
     </ul>
   </div>
+  )
 }
 
 export default AboutExperianceItem
