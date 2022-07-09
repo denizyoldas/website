@@ -7,8 +7,8 @@ const MENU = {
   '/': 'Ana Sayfa',
   '/about': 'Hakkımda',
   '/projects': 'Projelerim',
+  // '/blog': 'Blog',
   '/bookmarks': 'Yer İmleri'
-  // '/blog': 'Blog'
 }
 
 function Header() {
