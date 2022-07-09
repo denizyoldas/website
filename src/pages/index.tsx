@@ -26,7 +26,7 @@ export default function Index() {
           <span className="text-purple-600 dark:text-blue-400">javascript</span>{' '}
           ile tanışmamdan sonra genel olarak{' '}
           <span className="text-purple-600 dark:text-blue-400">javascript</span>{' '}
-          ağırlıklı geliştirmeler yaptım. <Link href="about">devamı</Link>
+          ağırlıklı geliştirmeler yaptım. <Link href="/about">devamı</Link>
         </p>
         <h3 className="underline underline-offset-4 pt-3">
           Benimle iletişim için
