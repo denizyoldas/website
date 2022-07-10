@@ -10,12 +10,17 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}'
   ],
+  safelist: [
+    'bg-yellow-500',
+    'bg-brown-500',
+    'bg-red-500'
+  ],
   theme: {
     extend: {
       colors: {
         gray: colors.gray,
         dark: 'rgb(32, 32, 35)',
-        light: '#fcfefd'
+        light: '#fcfefd',
       },
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans]
