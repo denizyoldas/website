@@ -24,13 +24,13 @@ describe('Header', () => {
     expect(screen.getByText('Ana Sayfa')).toBeInTheDocument()
     expect(screen.getByText('Hakkımda')).toBeInTheDocument()
     expect(screen.getByText('Projelerim')).toBeInTheDocument()
-    expect(screen.getByText('Yer İmleri')).toBeInTheDocument()
+    // expect(screen.getByText('Yer İmleri')).toBeInTheDocument()
 
     // check link href
     expect(screen.getByText('Ana Sayfa')).toHaveAttribute('href', '/')
     expect(screen.getByText('Hakkımda')).toHaveAttribute('href', '/about')
     expect(screen.getByText('Projelerim')).toHaveAttribute('href', '/projects')
-    expect(screen.getByText('Yer İmleri')).toHaveAttribute('href', '/bookmarks')
+    // expect(screen.getByText('Yer İmleri')).toHaveAttribute('href', '/bookmarks')
   })
 
   it('link array should be correct', () => {
@@ -45,6 +45,6 @@ describe('Header', () => {
     expect(links[0]).toHaveAttribute('href', '/')
     expect(links[1]).toHaveAttribute('href', '/about')
     expect(links[2]).toHaveAttribute('href', '/projects')
-    expect(links[3]).toHaveAttribute('href', '/bookmarks')
+    // expect(links[3]).toHaveAttribute('href', '/bookmarks')
   })
 })
