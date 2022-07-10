@@ -26,7 +26,7 @@ export async function getStaticProps() {
     id: pageObj.id,
     title: pageObj.properties.title.title[0].plain_text,
     description: pageObj.properties.description.rich_text[0].plain_text,
-    tags: pageObj.properties.tags.multi_select.map(notionTag => notionTag.name),
+    tags: pageObj.properties.tags.multi_select.map(notionTag => ({ color: notionTag.color, text: notionTag.name })),
     url: pageObj.properties.url.rich_text[0].plain_text
   }))
 
