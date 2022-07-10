@@ -20,13 +20,13 @@ export default class MyDocument extends NextDocument {
           <meta content="#ffffff" name="theme-color" />
           <meta content="#ffffff" name="msapplication-TileColor" />
 
-          <script async src="https://gumroad.com/js/gumroad.js" />
+          {/* <script async src="https://gumroad.com/js/gumroad.js" /> */}
           <meta
             name="apple-mobile-web-app-status-bar-style"
             content="black-translucent"
           />
           {/* analytic */}
-          {meta.ga && (
+          {/* {meta.ga && (
             <>
               <script
                 async
@@ -39,7 +39,7 @@ export default class MyDocument extends NextDocument {
                 }}
               />
             </>
-          )}
+          )} */}
         </Head>
 
         <body className="bg-white text-zinc-600 antialiased dark:bg-zinc-900 dark:text-zinc-400 transition-colors duration-200 ease-in-out">
