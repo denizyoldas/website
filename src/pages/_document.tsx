@@ -26,7 +26,7 @@ export default class MyDocument extends NextDocument {
             content="black-translucent"
           />
           {/* analytic */}
-          {/* {meta.ga && (
+          {meta.ga && (
             <>
               <script
                 async
@@ -39,10 +39,10 @@ export default class MyDocument extends NextDocument {
                 }}
               />
             </>
-          )} */}
+          )}
         </Head>
 
-        <body className="bg-white text-zinc-600 antialiased dark:bg-zinc-900 dark:text-zinc-400 transition-colors duration-200 ease-in-out">
+        <body className="bg-white text-zinc-600 antialiased dark:bg-neutral-900 dark:text-neutral-300 transition-colors duration-200 ease-in-out font-sans">
           <Main />
           <NextScript />
         </body>

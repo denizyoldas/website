@@ -15,11 +15,11 @@ function Footer() {
           @denizyoldas
         </A>
         ; hosted on{' '}
-        <A href="https://vercel.com" blank={true}>
+        <A className="no-underline" href="https://vercel.com" blank={true}>
           Vercel
         </A>
         ;{' '}
-        <A href="referance" blank={false}>
+        <A className="no-underline" href="referance" blank={false}>
           Reference
         </A>
       </span>

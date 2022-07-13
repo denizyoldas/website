@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React from 'react'
 import AboutExperiances from 'src/components/about-experiances'
 
@@ -20,6 +21,9 @@ const SKILLS = [
 const AboutPage = () => {
   return (
     <>
+      <Head>
+        <title>Deniz Aksu - About</title>
+      </Head>
       <h3 className="underline underline-offset-4 pt-3">Hakkımda</h3>
       <p>
         Meslek lisesinden mezun olmadan staj yaparak yazılım geliştirmeye
@@ -33,7 +37,9 @@ const AboutPage = () => {
       <h4 className="underline underline-offset-3 pt-3">Yetenekler</h4>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 text-center">
         {SKILLS.map(item => (
-          <span className='bg-slate-500 rounded-lg' key={item}>{item}</span>
+          <span className="bg-slate-500 rounded-lg" key={item}>
+            {item}
+          </span>
         ))}
       </div>
     </>

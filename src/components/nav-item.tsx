@@ -10,9 +10,10 @@ function NavItem({ href, children }) {
     <Link href={href}>
       <a
         className={cx(
-          'px-2 py-1 rounded dark:text-white no-underline',
+          'px-2 py-1 rounded dark:text-white dark:hover:text-yellow-400',
+          !isActive && 'no-underline',
           isActive &&
-            'text-gray-900 bg-gray-200 dark:text-white dark:bg-gray-800'
+            'text-gray-900 dark:text-yellow-500 underline-offset-1 font-bold'
         )}
       >
         {children}
