@@ -14,9 +14,8 @@ export default class Notion {
     return listUsersResponse
   }
 
-  async databases(): Promise<any> {
-    const response = await this.notion.databases
-    return response
+  databases() {
+    return this.notion.databases
   }
 
   async page(query: any = null) {

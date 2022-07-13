@@ -35,7 +35,7 @@ exports[`renders homepage unchanged 1`] = `
       4 yılı aşkın bir süredir Full-Stack ve Frontend Olarak görev alıp bu görev sürelerinde kendinimi geliştirmeye ve ileriye taşımaya odaklanan bir yazılımcıyım. Lise yıllarında
        
       <span
-        class="text-purple-600 dark:text-blue-400"
+        class="text-purple-600 dark:text-yellow-500"
       >
         javascript
       </span>
@@ -43,25 +43,20 @@ exports[`renders homepage unchanged 1`] = `
       ile tanışmamdan sonra genel olarak
        
       <span
-        class="text-purple-600 dark:text-blue-400"
+        class="text-purple-600 dark:text-yellow-500"
       >
         javascript
       </span>
        
-      ağırlıklı geliştirmeler yaptım. 
-      <a
-        href="/about"
-      >
-        devamı
-      </a>
+      ağırlıklı geliştirmeler yaptım.
     </p>
     <h3
       class="underline underline-offset-4 pt-3"
     >
-      Benimle iletişim için
+      Benimle iletişime geçmek için
     </h3>
     <p>
-      Geliştirdiğim projeleri takip etmek için github'a attığım saçma tweetlere bakmak isterseniz de twitter hesabıma bakabilirsiniz. Önmeli gördüğünüz konular için lütfen mail atın.
+      Geliştirdiğim projeleri takip etmek github'a, attığım tweetlere bakmak için twitter hesabıma bakabilirsiniz. Önemli gördüğünüz konular için lütfen mail atın.
     </p>
     <div
       class="flex place-content-center"
@@ -76,6 +71,7 @@ exports[`renders homepage unchanged 1`] = `
           target="_blank"
         >
           <svg
+            class="hover:text-yellow-300"
             fill="currentColor"
             height="24"
             stroke="currentColor"
@@ -96,6 +92,7 @@ exports[`renders homepage unchanged 1`] = `
           target="_blank"
         >
           <svg
+            class="hover:text-blue-300"
             fill="currentColor"
             height="24"
             stroke="currentColor"
@@ -116,6 +113,7 @@ exports[`renders homepage unchanged 1`] = `
           target="_blank"
         >
           <svg
+            class="hover:text-blue-400"
             fill="currentColor"
             height="24"
             stroke="currentColor"
@@ -136,6 +134,7 @@ exports[`renders homepage unchanged 1`] = `
           target="_blank"
         >
           <svg
+            class="hover:text-yellow-300"
             fill="currentColor"
             height="24"
             stroke="currentColor"

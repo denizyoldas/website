@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import React from 'react'
 import ProjectItem from 'src/components/project-item'
 import { IProject } from 'src/types/project'
@@ -53,12 +54,15 @@ const PROJECTS: IProject[] = [
 const Projects = () => {
   return (
     <>
+      <Head>
+        <title>Deniz Aksu - Projects</title>
+      </Head>
       <h3 className="underline underline-offset-4 pt-3">Projeler</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <ul className="grid grid-flow-row gap-10 place-items-center">
         {PROJECTS.map(project => (
           <ProjectItem key={project.name} {...project} />
         ))}
-      </div>
+      </ul>
     </>
   )
 }

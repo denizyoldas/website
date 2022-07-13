@@ -22,16 +22,16 @@ function MyApp({ Component, pageProps, router }) {
   }
 
   const spring = {
-    type: "spring",
+    type: 'spring',
     damping: 20,
     stiffness: 100,
-    when: "afterChildren"
-  };
+    when: 'afterChildren'
+  }
 
   return (
     <ThemeProvider attribute="class">
       <Provider url={process.env.NEXT_PUBLIC_API_URL} options={options}>
-        <main className="bg-light dark:bg-dark dark:text-white min-h-screen">
+        <main className="bg-light dark:bg-neutral-900 dark:text-white min-h-screen">
           <Head>
             <title>Deniz Aksu</title>
             <meta
@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps, router }) {
 
           <Header />
 
-          <main className="prose container w-full md:mx-auto px-4 dark:prose-invert dark:text-white">
+          <main className="prose container w-full md:mx-auto px-4 dark:prose-invert">
             <AnimatePresence exitBeforeEnter initial={true}>
               <motion.div
                 key={router.pathname}
@@ -63,4 +63,3 @@ function MyApp({ Component, pageProps, router }) {
 }
 
 export default MyApp
-

@@ -14,7 +14,7 @@ describe('<NavItem> nav item', () => {
 
     expect(screen.getByText('Ana Sayfa')).toHaveAttribute('href', '/')
     expect(screen.getByText('Ana Sayfa')).toHaveClass(
-      'text-gray-900 bg-gray-200 dark:text-white dark:bg-gray-800'
+      'text-gray-900 dark:text-yellow-500 underline-offset-1 font-bold'
     )
   })
 
@@ -26,8 +26,8 @@ describe('<NavItem> nav item', () => {
     )
 
     expect(screen.getByText('Hakkımda')).toHaveAttribute('href', '/about')
-    expect(screen.getByText('Hakkımda')).not.toHaveClass(
-      'text-gray-900 bg-gray-200 dark:text-white dark:bg-gray-800'
+    expect(screen.getByText('Hakkımda')).toHaveClass(
+      'px-2 py-1 rounded dark:text-white dark:hover:text-yellow-400 no-underline'
     )
   })
 })
