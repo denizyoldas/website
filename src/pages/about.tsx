@@ -37,7 +37,7 @@ const AboutPage = () => {
       <h4 className="underline underline-offset-3 pt-3">Yetenekler</h4>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 text-center">
         {SKILLS.map(item => (
-          <span className="bg-slate-500 rounded-lg" key={item}>
+          <span className="bg-slate-500 rounded-lg text-white" key={item}>
             {item}
           </span>
         ))}
