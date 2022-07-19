@@ -1,11 +1,10 @@
+import '../styles/globals.css'
 import Head from 'next/head'
 import Header from 'src/components/header'
 import Footer from 'src/components/footer'
 import { ThemeProvider } from 'next-themes'
 import { Provider } from 'use-http'
 import { AnimatePresence, motion } from 'framer-motion'
-
-import '../styles/globals.css'
 
 function MyApp({ Component, pageProps, router }) {
   const options = {
