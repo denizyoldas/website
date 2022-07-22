@@ -13,6 +13,10 @@ const Blog: React.FC<Props> = ({ posts }) => {
     <>
       <Head>
         <title>Deniz Aksu - Blog</title>
+        <meta
+          name="description"
+          content="yazdığım yazıları ve notları buradan okuyabilirsiniz."
+        />
       </Head>
       {posts.length && (
         <div>
