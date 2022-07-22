@@ -16,18 +16,31 @@ const ContactDetail: React.FC = () => {
       </p>
       <div className="flex place-content-center">
         <div className="flex flex-row justify-evenly w-1/3">
-          <A blank={true} href="https://github.com/denizyoldas">
+          <A
+            blank={true}
+            href="https://github.com/denizyoldas"
+            aria-label="github"
+          >
             <BsGithub size={24} className="hover:text-yellow-300" />
           </A>
-          <A blank={true} href="https://twitter.com/yoldasaksu">
+          <A
+            blank={true}
+            href="https://twitter.com/yoldasaksu"
+            area-label="twitter"
+          >
             <BsTwitter size={24} className="hover:text-blue-300" />
           </A>
-          <A blank={true} href="https://www.linkedin.com/in/denizyoldas/">
+          <A
+            blank={true}
+            href="https://www.linkedin.com/in/denizyoldas/"
+            area-label="linkedin"
+          >
             <BsLinkedin size={24} className="hover:text-blue-400" />
           </A>
           <A
             blank={true}
             href="mailto:daksu30@gmail.com?subject=Web Sitesi Üzerinden"
+            area-label="email"
           >
             <AiTwotoneMail size={24} className="hover:text-yellow-300" />
           </A>

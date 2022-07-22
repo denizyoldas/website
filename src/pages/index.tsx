@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import ContactDetail from 'src/components/contact-detail'
 
 export default function Index() {
