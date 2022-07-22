@@ -1,5 +1,205 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`renders about unchanged 1`] = `
+<div>
+  <h3
+    class="underline underline-offset-4 pt-3"
+  >
+    Hakkımda
+  </h3>
+  <p>
+    Meslek lisesinden mezun olmadan staj yaparak yazılım geliştirmeye başladım. Bu süreçte Full-Stack olarak görev aldım. Sonrasında üniversiteye gidip aynı dönemde çalışma hayatında bulunmaya devam ettim. Genel olarak Start-Up firmalarında yer aldım. Üniversiteden sonra kariyer hayatıma Front-End Developer olarak devam ediyorum.
+  </p>
+  <h4
+    class="underline underline-offset-3"
+  >
+    Deneyim
+  </h4>
+  <div
+    class="border-b-2 border-slate-500"
+  >
+    <h3
+      class="font-bold mb-0"
+    >
+      Front-End Developer
+    </h3>
+    <h6
+      class="font-extralight"
+    >
+      Dijital Kurye · Ekim 2021 - Mevcut
+    </h6>
+    <ul>
+      <li>
+        <p>
+          Dijital kurye adı verilen projede Angular 11 kullanarak bir operasyon yönetimi, imza yönetimi vb... sistemlerin yönetildiği bir dashboard geliştirmekteyim. RxJs, Fabric, PdfJS gibi önemli kütüphaneler kullanarak birçok farklı geliştirme yaptım.
+        </p>
+      </li>
+      <li>
+        <p>
+          "Canlı Müzayede" adı verilen uygulamada ise react kullanarak geliştirme yapıyorum. Burada Redux, Material, CraftJs gibi teknolojilere yer veriyorum.
+        </p>
+      </li>
+      <li>
+        <p>
+          Electron.js kullanarak ekran-ses-ekran sesi olacak şekilde kayıt uygulaması geliştirdim.
+        </p>
+      </li>
+      <li>
+        <p>
+          "Meksa verifier" adı verilen MVC projesinde JQuery ile geliştirmeler yaptım.
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div
+    class="border-b-2 border-slate-500"
+  >
+    <h3
+      class="font-bold mb-0"
+    >
+      Front-End Developer
+    </h3>
+    <h6
+      class="font-extralight"
+    >
+      Altamira Digital · Ekim 2020 - Temmuz 2021
+    </h6>
+    <ul>
+      <li>
+        <p>
+          Angular 8 kullanarak geliştirdiğim projelerin başında "CondLife" adı verilen yönetim paneli platformu geliyor. Avm, Site, Rezidans yönetimi için yapılan bir dashboard paneli. Diğer projelerde olduğu gibi RxJs, WebSocket vb. kütüphaneler kullanarak geliştirmeler yaptım.
+        </p>
+      </li>
+      <li>
+        <p>
+          "Borusan Kios" Projesi geliştirdim. Angular 8 ve Electron.js kullanarak Borusan Otomotiv için tamamiyle SignalR ile çalışan bir Para Ödeme Kiosk'u geliştirmesinde yer aldım.
+        </p>
+      </li>
+      <li>
+        <p>
+          Istanbul'da bulunan "Acarkent" sitesinin yönetimi için tasarlanmış dashboard'a Angular 8 ile geliştirmelerde bulundum.
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div
+    class="border-b-2 border-slate-500"
+  >
+    <h3
+      class="font-bold mb-0"
+    >
+      Full-Stack Developer
+    </h3>
+    <h6
+      class="font-extralight"
+    >
+      İdeal Bilişim · Eylül 2018 - Kasım 2019
+    </h6>
+    <ul>
+      <li>
+        <p>
+          PHP kullanarak mobil uygulama için API yazdım.
+        </p>
+      </li>
+      <li>
+        <p>
+          Laravel Framework'ü kullanarak Veteriner yönetim uygulaması geliştirdim.
+        </p>
+      </li>
+      <li>
+        <p>
+          HTML, CSS, JQuery kullanarak websiteleri geliştirmesi yaptım.
+        </p>
+      </li>
+      <li>
+        <p>
+          Ionic - Angular 2 kullanarak mobil uygulama geliştirdim.
+        </p>
+      </li>
+      <li>
+        <p>
+          Angular.js kullanarak Front-End geliştirmeleri yaptım.
+        </p>
+      </li>
+    </ul>
+  </div>
+  <h4
+    class="underline underline-offset-3 pt-3"
+  >
+    Yetenekler
+  </h4>
+  <div
+    class="grid grid-cols-2 gap-4 sm:grid-cols-4 text-center"
+  >
+    <span
+      class="bg-slate-500 rounded-lg text-white"
+    >
+      Angular
+    </span>
+    <span
+      class="bg-slate-500 rounded-lg text-white"
+    >
+      Angular.js
+    </span>
+    <span
+      class="bg-slate-500 rounded-lg text-white"
+    >
+      React
+    </span>
+    <span
+      class="bg-slate-500 rounded-lg text-white"
+    >
+      React Native
+    </span>
+    <span
+      class="bg-slate-500 rounded-lg text-white"
+    >
+      Vue
+    </span>
+    <span
+      class="bg-slate-500 rounded-lg text-white"
+    >
+      JQuery
+    </span>
+    <span
+      class="bg-slate-500 rounded-lg text-white"
+    >
+      Electron
+    </span>
+    <span
+      class="bg-slate-500 rounded-lg text-white"
+    >
+      RxJs
+    </span>
+    <span
+      class="bg-slate-500 rounded-lg text-white"
+    >
+      HTML
+    </span>
+    <span
+      class="bg-slate-500 rounded-lg text-white"
+    >
+      CSS
+    </span>
+    <span
+      class="bg-slate-500 rounded-lg text-white"
+    >
+      JavaScript
+    </span>
+    <span
+      class="bg-slate-500 rounded-lg text-white"
+    >
+      TypeScript
+    </span>
+    <span
+      class="bg-slate-500 rounded-lg text-white"
+    >
+      Go
+    </span>
+  </div>
+</div>
+`;
+
 exports[`renders homepage unchanged 1`] = `
 <div>
   <div
@@ -157,5 +357,364 @@ exports[`renders homepage unchanged 1`] = `
       </div>
     </div>
   </div>
+</div>
+`;
+
+exports[`renders projects unchanged 1`] = `
+<div>
+  <h3
+    class="underline underline-offset-4 pt-3"
+  >
+    Projeler
+  </h3>
+  <ul
+    class="grid grid-flow-row gap-10 place-items-center"
+  >
+    <li
+      class="group flex flex-col items-center drop-shadow-lg text-center py-4 px-6 bg-white dark:bg-neutral-900 max-w-md"
+    >
+      <a
+        href="https://wordonce.com/"
+        rel="nopper noreferrer"
+        target="_blank"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27300%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt="Wordonce Game"
+            class="w-full h-auto rounded-md object-contain"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </a>
+      <div
+        class="flex flex-col items-center"
+      >
+        <h3
+          class="text-2xl font-bold"
+        >
+          Wordonce Game
+        </h3>
+        <p
+          class="text-sm"
+        >
+          Vue kullanarak freelance olarak geliştirdiğim bir kelime oyunu. Kısaca satırda veya sütünda aynı harf bulunmaması ve okunduğunda anlamlı bir cümle oluşması kurallarına dayanan bir oyun.
+        </p>
+        <div
+          class="grid grid-cols-2 gap-3"
+        >
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            Vue
+          </span>
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            TypeScript
+          </span>
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            Pinia
+          </span>
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            Vite
+          </span>
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            sass
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="group flex flex-col items-center drop-shadow-lg text-center py-4 px-6 bg-white dark:bg-neutral-900 max-w-md"
+    >
+      <a
+        href="https://portfolio-denizyoldas.vercel.app"
+        rel="nopper noreferrer"
+        target="_blank"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27300%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt="Portfolio"
+            class="w-full h-auto rounded-md object-contain"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </a>
+      <div
+        class="flex flex-col items-center"
+      >
+        <h3
+          class="text-2xl font-bold"
+        >
+          Portfolio
+        </h3>
+        <p
+          class="text-sm"
+        >
+          React js kullanarak youtube da gördüklerime ekleyerek oluşturdum eski portfolio sitem.
+        </p>
+        <div
+          class="grid grid-cols-2 gap-3"
+        >
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            React
+          </span>
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            sass
+          </span>
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            css
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="group flex flex-col items-center drop-shadow-lg text-center py-4 px-6 bg-white dark:bg-neutral-900 max-w-md"
+    >
+      <a
+        href="https://github.com/denizyoldas/hotel-app"
+        rel="nopper noreferrer"
+        target="_blank"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27300%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt="Hotel App"
+            class="w-full h-auto rounded-md object-contain"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </a>
+      <div
+        class="flex flex-col items-center"
+      >
+        <h3
+          class="text-2xl font-bold"
+        >
+          Hotel App
+        </h3>
+        <p
+          class="text-sm"
+        >
+          Bir case olarak gelen ve yaparken keyif aldığım. Kendim için geliştirdiğim bir otel puanlama ekleme uygulaması
+        </p>
+        <div
+          class="grid grid-cols-2 gap-3"
+        >
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            React
+          </span>
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            TypeScript
+          </span>
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            Tailwindcss
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="group flex flex-col items-center drop-shadow-lg text-center py-4 px-6 bg-white dark:bg-neutral-900 max-w-md"
+    >
+      <a
+        href="#"
+        rel="nopper noreferrer"
+        target="_blank"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27300%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt="Screen Record App"
+            class="w-full h-auto rounded-md object-contain"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </a>
+      <div
+        class="flex flex-col items-center"
+      >
+        <h3
+          class="text-2xl font-bold"
+        >
+          Screen Record App
+        </h3>
+        <p
+          class="text-sm"
+        >
+          Electron js kullanarak geliştirdiğim ekran kayıt uygulaması. Ekranın sesini ve bilgisayarın mikrofonundan gelen sesi kayıt altına alıp belirlenen dosyaya mp4 uzantılı bir çıktı alarak izlemenize olanak sağlıyor.
+        </p>
+        <div
+          class="grid grid-cols-2 gap-3"
+        >
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            Electron
+          </span>
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            Bulma
+          </span>
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            JavaScript
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="group flex flex-col items-center drop-shadow-lg text-center py-4 px-6 bg-white dark:bg-neutral-900 max-w-md"
+    >
+      <a
+        href="https://github.com/denizyoldas/todo-app"
+        rel="nopper noreferrer"
+        target="_blank"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27400%27%20height=%27300%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt="ToDo App"
+            class="w-full h-auto rounded-md object-contain"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </a>
+      <div
+        class="flex flex-col items-center"
+      >
+        <h3
+          class="text-2xl font-bold"
+        >
+          ToDo App
+        </h3>
+        <p
+          class="text-sm"
+        >
+          React Native kullanarak geliştirdiğim bir not tutma uygulaması. Genel olarak ios uyumlu bir app olarak basit düzeyde not tutmaya yardımcı bir uygulama
+        </p>
+        <div
+          class="grid grid-cols-2 gap-3"
+        >
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            React Native
+          </span>
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            Chakra UI
+          </span>
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            TypeScript
+          </span>
+          <span
+            class="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+          >
+            Jotai
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
 </div>
 `;
