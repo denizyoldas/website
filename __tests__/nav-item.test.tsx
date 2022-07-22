@@ -27,7 +27,7 @@ describe('<NavItem> nav item', () => {
 
     expect(screen.getByText('Hakkımda')).toHaveAttribute('href', '/about')
     expect(screen.getByText('Hakkımda')).toHaveClass(
-      'px-2 py-1 rounded dark:text-white dark:hover:text-yellow-400 no-underline'
+      'px-2 py-1 dark:text-white hover:underline hover:underline-offset-2 no-underline'
     )
   })
 })
