@@ -5,9 +5,6 @@ import ContactDetail from 'src/components/contact-detail'
 export default function Index() {
   return (
     <>
-      <div className="text-center bg-gray-200 dark:bg-gray-600 rounded-md mt-4">
-        Merhaba, ben Türkiye&apos;de yaşayan bir Frontend Geliştiricisiyim
-      </div>
       <div className="pt-8">
         <div className="text-6xl font-medium">Deniz Aksu</div>
         <div className="text-sm">
@@ -16,11 +13,14 @@ export default function Index() {
             (React, Next.js, TypeScript, Angular, Node.js)
           </span>
         </div>
+        <div className="text-center bg-gray-200 dark:bg-gray-600 rounded-md mt-4">
+          Eğlenceli bir yazılım geliştiricisi
+        </div>
         <h3 className="underline underline-offset-4">Kısaca</h3>
         <p>
-          4 yılı aşkın bir süredir Full-Stack ve Frontend Olarak görev alıp bu
-          görev sürelerinde kendinimi geliştirmeye ve ileriye taşımaya odaklanan
-          bir yazılımcıyım. Lise yıllarında{' '}
+          4 yılı aşkın bir süredir yazılım geliştirmekte olup kendinimi
+          geliştirmeye ve ileriye taşımaya odaklanan bir yazılımcıyım. Lise
+          yıllarında{' '}
           <span className="text-purple-600 dark:text-yellow-500">
             javascript
           </span>{' '}
@@ -28,7 +28,7 @@ export default function Index() {
           <span className="text-purple-600 dark:text-yellow-500">
             javascript
           </span>{' '}
-          ağırlıklı geliştirmeler yaptım.
+          temelli geliştirmeler yaptım.
         </p>
         <ContactDetail />
       </div>

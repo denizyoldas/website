@@ -3,11 +3,6 @@
 exports[`renders homepage unchanged 1`] = `
 <div>
   <div
-    class="text-center bg-gray-200 dark:bg-gray-600 rounded-md mt-4"
-  >
-    Merhaba, ben Türkiye'de yaşayan bir Frontend Geliştiricisiyim
-  </div>
-  <div
     class="pt-8"
   >
     <div
@@ -26,13 +21,18 @@ exports[`renders homepage unchanged 1`] = `
         (React, Next.js, TypeScript, Angular, Node.js)
       </span>
     </div>
+    <div
+      class="text-center bg-gray-200 dark:bg-gray-600 rounded-md mt-4"
+    >
+      Eğlenceli bir yazılım geliştiricisi
+    </div>
     <h3
       class="underline underline-offset-4"
     >
       Kısaca
     </h3>
     <p>
-      4 yılı aşkın bir süredir Full-Stack ve Frontend Olarak görev alıp bu görev sürelerinde kendinimi geliştirmeye ve ileriye taşımaya odaklanan bir yazılımcıyım. Lise yıllarında
+      4 yılı aşkın bir süredir yazılım geliştirmekte olup kendinimi geliştirmeye ve ileriye taşımaya odaklanan bir yazılımcıyım. Lise yıllarında
        
       <span
         class="text-purple-600 dark:text-yellow-500"
@@ -48,7 +48,7 @@ exports[`renders homepage unchanged 1`] = `
         javascript
       </span>
        
-      ağırlıklı geliştirmeler yaptım.
+      temelli geliştirmeler yaptım.
     </p>
     <h3
       class="underline underline-offset-4 pt-3"
@@ -56,7 +56,7 @@ exports[`renders homepage unchanged 1`] = `
       Benimle iletişime geçmek için
     </h3>
     <p>
-      Geliştirdiğim projeleri takip etmek github'a, attığım tweetlere bakmak için twitter hesabıma bakabilirsiniz. Önemli gördüğünüz konular için lütfen mail atın.
+      Geliştirdiğim projeleri takip etmek isterseniz github'a, attığım tweetlere bakmak için twitter hesabıma bakabilirsiniz. Detaylı iletişim için mail ile ulaşım sağlayabilirsiniz.
     </p>
     <div
       class="flex place-content-center"

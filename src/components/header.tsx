@@ -7,13 +7,14 @@ const MENU = {
   '/': 'Ana Sayfa',
   '/about': 'Hakkımda',
   '/projects': 'Projelerim',
-  '/blog': 'Blog',
+  '/blog': 'Blog'
   // '/bookmarks': 'Yer İmleri'
 }
 
 function Header() {
   return (
-    <header className="prose dark:prose-invert container mx-auto p-4 pb-5 flex flex-row justify-between items-center">
+    // hidden sm:flex
+    <header className="flex prose dark:prose-invert container mx-auto p-4 pb-5 flex-row justify-between items-center">
       <Head>
         <title>Deniz Aksu - Home</title>
       </Head>
