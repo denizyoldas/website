@@ -23,6 +23,10 @@ const AboutPage = () => {
     <>
       <Head>
         <title>Deniz Aksu - About</title>
+        <meta
+          name="description"
+          content="Deniz Aksunun kişisel websitesidir. Hakkında bilgilerini okuyup bilgi edinebilirsiniz."
+        />
       </Head>
       <h3 className="underline underline-offset-4 pt-3">Hakkımda</h3>
       <p>
