@@ -14,6 +14,22 @@ const PROJECTS: IProject[] = [
     createdAt: new Date('2022-04-20')
   },
   {
+    name: 'Mai Organizasyon',
+    description:
+      'Mai Organizasyon web sitesi tasarımı, kodlanması ve google işletmem hesabı kurulumu.',
+    url: 'https://maiorganizasyon.com/',
+    image: '/no-image.webp',
+    technologies: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'sass',
+      'tailwindcss',
+      'Figma'
+    ],
+    createdAt: new Date('2022-08-04')
+  },
+  {
     name: 'Portfolio',
     description:
       'React js kullanarak youtube da gördüklerime ekleyerek oluşturdum eski portfolio sitem.',
