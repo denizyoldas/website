@@ -18,7 +18,7 @@ const PROJECTS: IProject[] = [
     description:
       'Mai Organizasyon web sitesi tasarımı, kodlanması ve google işletmem hesabı kurulumu.',
     url: 'https://maiorganizasyon.com/',
-    image: '/no-image.webp',
+    image: '/mai-org.png',
     technologies: [
       'React',
       'Next.js',
