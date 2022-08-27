@@ -30,6 +30,14 @@ const PROJECTS: IProject[] = [
     createdAt: new Date('2022-08-04')
   },
   {
+    name: 'Google Chrome Bookmarks Extension',
+    description: 'Google Chrome Bookmarks Extension',
+    url: 'https://google.com/chrome-bookmarks-extension',
+    image: '/chrome-bookmarks.png',
+    technologies: ['React', 'TypeScript', 'sass', 'Styled Components'],
+    createdAt: new Date('2022-08-27')
+  },
+  {
     name: 'Portfolio',
     description:
       'React js kullanarak youtube da gördüklerime ekleyerek oluşturdum eski portfolio sitem.',
