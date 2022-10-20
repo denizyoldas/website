@@ -5,6 +5,7 @@ import Footer from 'src/components/footer'
 import { ThemeProvider } from 'next-themes'
 import { Provider } from 'use-http'
 import { AnimatePresence, motion } from 'framer-motion'
+import NProgress from 'src/components/UI/n-progress'
 
 function MyApp({ Component, pageProps, router }) {
   const options = {
@@ -29,6 +30,7 @@ function MyApp({ Component, pageProps, router }) {
 
   return (
     <ThemeProvider attribute="class">
+      <NProgress />
       <Provider url={process.env.NEXT_PUBLIC_API_URL} options={options}>
         <main className="bg-light dark:bg-neutral-900 dark:text-white min-h-screen">
           <Head>
