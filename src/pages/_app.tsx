@@ -11,11 +11,9 @@ function MyApp({ Component, pageProps, router }) {
   const options = {
     interceptors: {
       request: async ({ options, url, path, route }) => {
-        console.log('METHOD:', options.method)
         return options
       },
       response: async ({ response }) => {
-        console.log('response', response)
         return response
       }
     }
