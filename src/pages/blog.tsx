@@ -49,8 +49,6 @@ export async function getStaticProps() {
     url: pageObj.properties.url.rich_text[0].plain_text
   }))
 
-  // console.log(posts)
-
   return {
     props: { posts },
     revalidate: ms('1d') / 1000

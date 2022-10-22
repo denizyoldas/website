@@ -21,28 +21,40 @@ const ContactDetail: React.FC = () => {
             href="https://github.com/denizyoldas"
             aria-label="github"
           >
-            <BsGithub size={24} className="hover:text-yellow-300" />
+            <BsGithub
+              size={24}
+              className="hover:text-purple-600 dark:hover:text-yellow-500"
+            />
           </A>
           <A
             blank={true}
             href="https://twitter.com/yoldasaksu"
             area-label="twitter"
           >
-            <BsTwitter size={24} className="hover:text-blue-300" />
+            <BsTwitter
+              size={24}
+              className="hover:text-purple-600 dark:hover:text-yellow-500"
+            />
           </A>
           <A
             blank={true}
             href="https://www.linkedin.com/in/denizyoldas/"
             area-label="linkedin"
           >
-            <BsLinkedin size={24} className="hover:text-blue-400" />
+            <BsLinkedin
+              size={24}
+              className="hover:text-purple-600 dark:hover:text-yellow-500"
+            />
           </A>
           <A
             blank={true}
             href="mailto:daksu30@gmail.com?subject=Web Sitesi Üzerinden"
             area-label="email"
           >
-            <AiTwotoneMail size={24} className="hover:text-yellow-300" />
+            <AiTwotoneMail
+              size={24}
+              className="hover:text-purple-600 dark:hover:text-yellow-500"
+            />
           </A>
         </div>
       </div>

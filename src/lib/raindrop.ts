@@ -32,9 +32,6 @@ export default class Raindrop {
 
     const data = await res.json()
 
-    console.log(process.env.RAINDROP_ACCESS_TOKEN)
-    console.log(data)
-
     // if (data.items.length === this.perPage) {
     //   return data.items.concat(await this.getBookmarks(page + 1));
     // } else {

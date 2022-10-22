@@ -6,7 +6,6 @@ const NProgress = () => {
   const { theme } = useTheme()
 
   const NProgressColor = useMemo(() => {
-    console.log(theme)
     if (theme === 'dark') {
       return '#facc14'
     } else {

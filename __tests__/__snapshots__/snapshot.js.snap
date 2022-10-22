@@ -272,7 +272,7 @@ exports[`renders homepage unchanged 1`] = `
           target="_blank"
         >
           <svg
-            class="hover:text-yellow-300"
+            class="hover:text-purple-600 dark:hover:text-yellow-500"
             fill="currentColor"
             height="24"
             stroke="currentColor"
@@ -294,7 +294,7 @@ exports[`renders homepage unchanged 1`] = `
           target="_blank"
         >
           <svg
-            class="hover:text-blue-300"
+            class="hover:text-purple-600 dark:hover:text-yellow-500"
             fill="currentColor"
             height="24"
             stroke="currentColor"
@@ -316,7 +316,7 @@ exports[`renders homepage unchanged 1`] = `
           target="_blank"
         >
           <svg
-            class="hover:text-blue-400"
+            class="hover:text-purple-600 dark:hover:text-yellow-500"
             fill="currentColor"
             height="24"
             stroke="currentColor"
@@ -338,7 +338,7 @@ exports[`renders homepage unchanged 1`] = `
           target="_blank"
         >
           <svg
-            class="hover:text-yellow-300"
+            class="hover:text-purple-600 dark:hover:text-yellow-500"
             fill="currentColor"
             height="24"
             stroke="currentColor"
