@@ -1,19 +1,27 @@
 import { useTheme } from 'next-themes'
 import NextNProgress from 'nextjs-progressbar'
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 const NProgress = () => {
   const { theme } = useTheme()
+  const [color, setColor] = useState('#facc14')
 
-  const NProgressColor = useMemo(() => {
+  useEffect(() => {
     if (theme === 'dark') {
-      return '#facc14'
+      setColor('#facc14')
     } else {
-      return '#c084fc'
+      setColor('#c084fc')
     }
   }, [theme])
 
-  return <NextNProgress color={NProgressColor} />
+  // const NProgressColor = useMemo(() => {
+  //   if (theme === 'dark') {
+  //     return '#facc14'
+  //   }
+  //   return '#c084fc'
+  // }, [theme])
+
+  return <NextNProgress color={color} />
 }
 
 export default NProgress
