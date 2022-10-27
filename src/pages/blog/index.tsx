@@ -46,7 +46,8 @@ export async function getStaticProps() {
       color: notionTag.color,
       text: notionTag.name
     })),
-    url: pageObj.properties.url.rich_text[0].plain_text
+    url: pageObj.properties.url.rich_text[0].plain_text,
+    date: new Date(pageObj.created_time).toISOString()
   }))
 
   return {

@@ -7,13 +7,15 @@ interface PostItemProps {
   description: string
   tags: { text: string; color: string }[]
   url: string
+  date: string
 }
 
 const POST: PostItemProps = {
   title: 'test name',
   description: 'test description',
   tags: [{ text: 'angular', color: 'red' }],
-  url: 'https://www.youtube.com/watch?v=QH2-TGUlwu4'
+  url: 'https://www.youtube.com/watch?v=QH2-TGUlwu4',
+  date: '2022-04-20'
 }
 
 describe('<PostItem /> Post Item', () => {

@@ -7,7 +7,8 @@ const MENU = {
   '/': 'Ana Sayfa',
   '/about': 'Hakkımda',
   '/projects': 'Projelerim',
-  '/blog': 'Blog'
+  '/blog': 'Blog',
+  '/setup': 'Setup'
   // '/bookmarks': 'Yer İmleri'
 }
 
