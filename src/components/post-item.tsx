@@ -1,6 +1,7 @@
 import React from 'react'
 import A from './UI/a'
 import cx from 'classnames'
+import { format } from 'date-fns'
 
 interface Props {
   title: string
@@ -8,6 +9,7 @@ interface Props {
   tags: { text: string; color: string }[]
   url: string
   isLast?: boolean
+  date: string
 }
 
 const PostItem: React.FC<Props> = ({
@@ -15,7 +17,8 @@ const PostItem: React.FC<Props> = ({
   description,
   tags,
   url,
-  isLast
+  isLast,
+  date
 }) => {
   return (
     <div className={cx({ 'border-b-2 pb-4 border-slate-600': !isLast })}>
@@ -23,6 +26,10 @@ const PostItem: React.FC<Props> = ({
         <A blank href={url}>
           {title}
         </A>
+
+        <span className="text-slate-500 text-sm ml-2">
+          {format(new Date(date), 'dd.MM.yy')}
+        </span>
       </h3>
       <p>{description}...</p>
       <div className="flex gap-2">

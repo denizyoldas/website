@@ -41,10 +41,12 @@ describe('Header', () => {
     )
 
     const links = screen.getAllByRole('link')
-    expect(links).toHaveLength(4)
+    expect(links).toHaveLength(5)
     expect(links[0]).toHaveAttribute('href', '/')
     expect(links[1]).toHaveAttribute('href', '/about')
     expect(links[2]).toHaveAttribute('href', '/projects')
+    expect(links[3]).toHaveAttribute('href', '/blog')
+    expect(links[4]).toHaveAttribute('href', '/setup')
     // expect(links[3]).toHaveAttribute('href', '/bookmarks')
   })
 })

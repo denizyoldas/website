@@ -12,7 +12,6 @@ describe('<About> About Page', () => {
     render(<About />)
     const SKILLS = [
       'Angular',
-      'Angular.js',
       'React',
       'React Native',
       'Vue',

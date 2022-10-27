@@ -8,7 +8,14 @@ exports[`renders about unchanged 1`] = `
     Hakkımda
   </h3>
   <p>
-    Meslek lisesinden mezun olmadan staj yaparak yazılım geliştirmeye başladım. Bu süreçte Full-Stack olarak görev aldım. Sonrasında üniversiteye gidip aynı dönemde çalışma hayatında bulunmaya devam ettim. Genel olarak Start-Up firmalarında yer aldım. Üniversiteden sonra kariyer hayatıma Front-End Developer olarak devam ediyorum.
+    Merhaba, ben Deniz Aksu. Şu anda
+     
+    <a
+      href="https://dijitalkurye.com.tr/"
+    >
+      Dijital Kurye
+    </a>
+     şirketinde Frontend Developer olarak çalışıyorum. 2018 yılından beri yazılım sektöründe çalışıyorum. 2016 yılından beri de web teknolojileri üzerine çalışmalar yapıyorum. Çalışma hayatımın ilk yıllarında C# ile yazılım geliştirmeye başladım. 2017 yılında web teknolojileri üzerine yoğunlaştım. 2018 yılında ise Angular ile yazılım geliştirmeye başladım. 2019 yılından bu yana ise React, NextJS ve Angular ile yazılım geliştirmeye devam ediyorum.
   </p>
   <h4
     class="underline underline-offset-3"
@@ -129,17 +136,12 @@ exports[`renders about unchanged 1`] = `
     Yetenekler
   </h4>
   <div
-    class="grid grid-cols-2 gap-4 sm:grid-cols-4 text-center"
+    class="grid grid-cols-3 gap-4 sm:grid-cols-4 text-center"
   >
     <span
       class="bg-slate-500 rounded-lg text-white"
     >
       Angular
-    </span>
-    <span
-      class="bg-slate-500 rounded-lg text-white"
-    >
-      Angular.js
     </span>
     <span
       class="bg-slate-500 rounded-lg text-white"
@@ -213,12 +215,11 @@ exports[`renders homepage unchanged 1`] = `
     <div
       class="text-sm"
     >
-      Frontend Developer
-       
+      Frontend Developer 
       <span
         class="text-xs"
       >
-        (React, Next.js, TypeScript, Angular, Node.js)
+        (JavaScript)
       </span>
     </div>
     <div
@@ -232,23 +233,34 @@ exports[`renders homepage unchanged 1`] = `
       Kısaca
     </h3>
     <p>
-      4 yılı aşkın bir süredir yazılım geliştirmekte olup kendinimi geliştirmeye ve ileriye taşımaya odaklanan bir yazılımcıyım. Lise yıllarında
+      Merhaba, ben Deniz Aksu. Şu anda
        
-      <span
+      <a
         class="text-purple-600 dark:text-yellow-500"
+        href="https://dijitalkurye.com.tr/"
       >
-        javascript
-      </span>
+        Dijital Kurye
+      </a>
        
-      ile tanışmamdan sonra genel olarak
+      şirketinde Frontend Developer olarak çalışıyorum. Kendimi geliştirmek için bir çok side project yapmaktayım. Bu projeleri
        
-      <span
+      <a
         class="text-purple-600 dark:text-yellow-500"
+        href="https://github.com/denizyoldas"
       >
-        javascript
-      </span>
+        Github
+      </a>
        
-      temelli geliştirmeler yaptım.
+      üzerinde paylaşıyorum. Ayrıca
+       
+      <a
+        class="text-purple-600 dark:text-yellow-500"
+        href="https://yoldasaksu.medium.com/"
+      >
+        Medium
+      </a>
+       
+      üzerinde yazılar yazıyorum.
     </p>
     <h3
       class="underline underline-offset-4 pt-3"
