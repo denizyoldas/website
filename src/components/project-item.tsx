@@ -25,7 +25,7 @@ const ProjectItem: React.FC<IProject> = ({
       </a>
       <div className="flex flex-col items-center">
         <h3 className="text-2xl font-bold">{name}</h3>
-        <span>{format(createdAt, 'dd-mm-yyyy')}</span>
+        <span>{format(createdAt, 'dd-MM-yyyy')}</span>
         <p className="text-sm">{description}</p>
         <div className="grid grid-cols-2 gap-3">
           {technologies.map(tech => (
