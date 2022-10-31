@@ -30,6 +30,21 @@ const PROJECTS: IProject[] = [
     createdAt: new Date('2022-08-04')
   },
   {
+    name: 'Digital Agancy',
+    description: 'Digital Agancy web sitesi tasarımı.',
+    url: 'https://digital-website-kappa.vercel.app/',
+    image: '/digital-agency.png',
+    technologies: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'sass',
+      'tailwindcss',
+      'Figma'
+    ],
+    createdAt: new Date('2022-10-30')
+  },
+  {
     name: 'Google Chrome Bookmarks Extension',
     description: 'Google Chrome Bookmarks Extension',
     url: 'https://google.com/chrome-bookmarks-extension',
