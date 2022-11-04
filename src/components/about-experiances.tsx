@@ -1,11 +1,20 @@
 import React from 'react'
-import AboutExperianceItem from './about-experiance-item';
+import { nanoid } from 'nanoid'
+import AboutExperianceItem from './about-experiance-item'
 
 const EXPERIANCES = [
   {
-    key: 'item1',
+    key: nanoid(),
     title: 'Front-End Developer',
-    subTitle: 'Dijital Kurye · Ekim 2021 - Mevcut',
+    subTitle: 'Apsiyon · Kasım 2022 - Mevcut',
+    detailList: [
+      'Angular, React, NextJS, Vue, Electron, RxJs, HTML, CSS, JavaScript, TypeScript, Go'
+    ]
+  },
+  {
+    key: nanoid(),
+    title: 'Front-End Developer',
+    subTitle: 'Dijital Kurye · Ekim 2021 - Kasım 2022',
     detailList: [
       'Dijital kurye adı verilen projede Angular 11 kullanarak bir operasyon yönetimi, imza yönetimi vb... sistemlerin yönetildiği bir dashboard geliştirmekteyim. RxJs, Fabric, PdfJS gibi önemli kütüphaneler kullanarak birçok farklı geliştirme yaptım.',
       '"Canlı Müzayede" adı verilen uygulamada ise react kullanarak geliştirme yapıyorum. Burada Redux, Material, CraftJs gibi teknolojilere yer veriyorum.',
@@ -14,7 +23,7 @@ const EXPERIANCES = [
     ]
   },
   {
-    key: 'item2',
+    key: nanoid(),
     title: 'Front-End Developer',
     subTitle: 'Altamira Digital · Ekim 2020 - Temmuz 2021',
     detailList: [
@@ -24,12 +33,12 @@ const EXPERIANCES = [
     ]
   },
   {
-    key: 'item3',
+    key: nanoid(),
     title: 'Full-Stack Developer',
     subTitle: 'İdeal Bilişim · Eylül 2018 - Kasım 2019',
     detailList: [
       'PHP kullanarak mobil uygulama için API yazdım.',
-      'Laravel Framework\'ü kullanarak Veteriner yönetim uygulaması geliştirdim.',
+      "Laravel Framework'ü kullanarak Veteriner yönetim uygulaması geliştirdim.",
       'HTML, CSS, JQuery kullanarak websiteleri geliştirmesi yaptım.',
       'Ionic - Angular 2 kullanarak mobil uygulama geliştirdim.',
       'Angular.js kullanarak Front-End geliştirmeleri yaptım.'
@@ -38,11 +47,13 @@ const EXPERIANCES = [
 ]
 
 const AboutExperiances: React.FC = () => {
-  return <>
-    {EXPERIANCES.map(item => (
-      <AboutExperianceItem {...item} key={item.key} />
-    ))}
-  </>
+  return (
+    <>
+      {EXPERIANCES.map(item => (
+        <AboutExperianceItem {...item} key={item.key} />
+      ))}
+    </>
+  )
 }
 
 export default AboutExperiances
