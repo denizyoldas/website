@@ -16,10 +16,10 @@ export default function Index() {
         <p>
           Merhaba, ben Deniz Aksu. Şu anda{' '}
           <a
-            href="https://dijitalkurye.com.tr/"
+            href="https://www.apsiyon.com/"
             className="text-purple-600 dark:text-yellow-500"
           >
-            Dijital Kurye
+            Apsiyon
           </a>{' '}
           şirketinde Frontend Developer olarak çalışıyorum. Kendimi geliştirmek
           için bir çok side project yapmaktayım. Bu projeleri{' '}
