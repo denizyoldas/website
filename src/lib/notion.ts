@@ -1,25 +1,12 @@
 import { Client } from '@notionhq/client'
 
-export default class Notion {
-  private notion: Client = null
+const notion = new Client({
+  auth: process.env.NOTION_ACCESS_TOKEN
+})
 
-  constructor() {
-    this.notion = new Client({
-      auth: process.env.NOTION_ACCESS_TOKEN
-    })
-  }
-
-  async getUser(): Promise<any> {
-    const listUsersResponse = await this.notion.users.list({})
-    return listUsersResponse
-  }
-
-  databases() {
-    return this.notion.databases
-  }
-
-  async page(query: any = null) {
-    const response = await this.notion.pages
-    return response
-  }
+export const getDatabase = async (databaseId: string) => {
+  const response = await notion.databases.query({
+    database_id: databaseId
+  })
+  return response.results
 }
