@@ -2,7 +2,7 @@ import ms from 'ms'
 import Head from 'next/head'
 import React from 'react'
 import PostItem from 'src/components/post-item'
-import Notion from 'src/lib/notion'
+import { getDatabase } from 'src/lib/notion'
 
 interface Props {
   posts: any[]
@@ -32,13 +32,12 @@ const Blog: React.FC<Props> = ({ posts }) => {
 }
 
 export async function getStaticProps() {
-  const notion = new Notion()
-  const res = notion.databases()
-  const databases = await res.query({
-    database_id: 'd0c8e4df-3355-4a69-9706-ddf0213bd0b9'
-  })
+  const databases = await getDatabase(
+    // 'd0c8e4df-3355-4a69-9706-ddf0213bd0b9'
+    '243c6492-4194-4ebd-9cbf-6894da4df1e7'
+  )
 
-  const posts = databases.results.map((pageObj: any) => ({
+  const posts = databases.map((pageObj: any) => ({
     id: pageObj.id,
     title: pageObj.properties.title.title[0].plain_text,
     description: pageObj.properties.description.rich_text[0].plain_text,
