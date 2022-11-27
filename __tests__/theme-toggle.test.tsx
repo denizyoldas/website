@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import ThemeToggle from '../src/components/theme-toggle'
+import ThemeToggle from '../components/theme-toggle'
 import userEvent from '@testing-library/user-event'
 import '@testing-library/jest-dom'
 

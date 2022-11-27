@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import ContactDetail from '../src/components/contact-detail'
+import ContactDetail from '../components/contact-detail'
 import '@testing-library/jest-dom'
 
 describe('<PostItem /> Post Item', () => {

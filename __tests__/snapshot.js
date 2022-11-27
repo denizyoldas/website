@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
-import Index from '../src/pages/index'
-import About from '../src/pages/about'
-import Projects from '../src/pages/projects'
+import Index from '../pages/index'
+import About from '../pages/about'
+import Projects from '../pages/projects'
 
 it('renders homepage unchanged', () => {
   const { container } = render(<Index />)

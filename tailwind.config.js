@@ -6,10 +6,7 @@ const { fontFamily } = require('tailwindcss/defaultTheme')
 module.exports = {
   mode: 'jit',
   darkMode: 'class',
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}'
-  ],
+  content: ['./components/**/*.tsx', './app/**/*.tsx'],
   safelist: ['bg-yellow-500', 'bg-brown-500', 'bg-red-500'],
   theme: {
     extend: {

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import PostItem from '../src/components/post-item'
+import PostItem from '../components/post-item'
 import '@testing-library/jest-dom'
 
 interface PostItemProps {

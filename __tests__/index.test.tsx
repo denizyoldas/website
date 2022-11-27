@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import Index from '../src/pages/index'
+import Index from '../app/page'
 import '@testing-library/jest-dom'
 
 describe('Home', () => {

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import ProjectItem from '../src/components/project-item'
+import ProjectItem from '../components/project-item'
 import '@testing-library/jest-dom'
 
 const PROJECT = {

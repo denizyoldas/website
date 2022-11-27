@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react'
-import About from '../src/pages/about'
 import '@testing-library/jest-dom'
+import About from 'app/about/page'
 
 describe('<About> About Page', () => {
   it('about created', () => {
