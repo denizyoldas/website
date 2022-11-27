@@ -5,12 +5,12 @@ import FoterMenu from './footer-menu'
 function Footer() {
   return (
     <>
-      <footer className="prose md:mx-auto dark:prose-invert py-8 px-4">
+      <footer className="prose py-8 px-4 dark:prose-invert md:mx-auto">
         <hr className="my-3" />
         <span>
           Made with Next.js by{' '}
           <A
-            className="no-underline"
+            className="hightlight no-underline"
             href="https://github.com/denizyoldas/website"
             blank={true}
           >

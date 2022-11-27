@@ -21,13 +21,13 @@ const PostItem: React.FC<Props> = ({
   date
 }) => {
   return (
-    <div className={cx({ 'border-b-2 pb-4 border-slate-600': !isLast })}>
+    <div className={cx({ 'border-b-2 border-slate-600 pb-4': !isLast })}>
       <h3>
         <A blank href={url}>
           {title}
         </A>
 
-        <span className="text-slate-500 text-sm ml-2">
+        <span className="ml-2 text-sm text-slate-500">
           {format(new Date(date), 'dd.MM.yy')}
         </span>
       </h3>
@@ -37,7 +37,7 @@ const PostItem: React.FC<Props> = ({
           <span
             key={tag.text}
             className={cx(
-              'bg-slate-300 dark:text-white dark:bg-slate-500 px-2 rounded-lg',
+              'rounded-lg bg-slate-300 px-2 dark:bg-slate-500 dark:text-white',
               `bg-${tag.color}-500`
             )}
           >

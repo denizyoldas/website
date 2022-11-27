@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps, router }) {
     <ThemeProvider attribute="class">
       <NProgress />
       <Provider url={process.env.NEXT_PUBLIC_API_URL} options={options}>
-        <main className="bg-light dark:bg-neutral-900 dark:text-white min-h-screen">
+        <main className="min-h-screen bg-light dark:bg-neutral-900 dark:text-white">
           <Head>
             <title>Deniz Aksu</title>
             <meta
@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps, router }) {
 
           <Header />
 
-          <main className="prose container w-full md:mx-auto px-4 dark:prose-invert">
+          <main className="container prose w-full px-4 dark:prose-invert md:mx-auto">
             <AnimatePresence exitBeforeEnter initial={true}>
               <motion.div
                 key={router.pathname}

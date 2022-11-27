@@ -1,21 +1,6 @@
 import Head from 'next/head'
-import React from 'react'
 import AboutExperiances from 'src/components/about-experiances'
-
-const SKILLS = [
-  'Angular',
-  'React',
-  'React Native',
-  'Vue',
-  'JQuery',
-  'Electron',
-  'RxJs',
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'Go'
-]
+import TechStack from 'src/components/tech-stack'
 
 const AboutPage = () => {
   return (
@@ -27,7 +12,7 @@ const AboutPage = () => {
           content="Deniz Aksunun kişisel websitesidir. Hakkında bilgilerini okuyup bilgi edinebilirsiniz."
         />
       </Head>
-      <h3 className="underline underline-offset-4 pt-3">Hakkımda</h3>
+      <h3 className="pt-3 underline underline-offset-4">Hakkımda</h3>
       <p>
         Merhaba, ben Deniz Aksu. Şu anda{' '}
         <a
@@ -44,16 +29,9 @@ const AboutPage = () => {
         2019 yılından bu yana ise React, NextJS ve Angular ile yazılım
         geliştirmeye devam ediyorum.
       </p>
-      <h4 className="underline underline-offset-3">Deneyim</h4>
+      <h4 className="underline-offset-3 underline">Deneyim</h4>
       <AboutExperiances />
-      <h4 className="underline underline-offset-3 pt-3">Yetenekler</h4>
-      <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 text-center">
-        {SKILLS.map(item => (
-          <span className="bg-slate-500 rounded-lg text-white" key={item}>
-            {item}
-          </span>
-        ))}
-      </div>
+      <TechStack />
     </>
   )
 }

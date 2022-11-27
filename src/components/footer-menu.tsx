@@ -4,8 +4,8 @@ import ThemeToggle from './theme-toggle'
 
 const FoterMenu = () => {
   return (
-    <div className="flex sm:hidden fixed inset-x-0 bottom-0 z-10 justify-center motion-safe:animate-slide-up-fade pointer-events-none bg-gradient-to-t from-neutral-900/50 to-transparent">
-      <nav className="container flex overflow-x-auto overflow-y-hidden relative items-stretch p-1 m-4 max-w-xl bg-neutral-800/80 rounded-xl shadow-lg shadow-black/50 backdrop-blur-sm pointer-events-auto snap-x sm:snap-none">
+    <div className="motion-safe:animate-slide-up-fade pointer-events-none fixed inset-x-0 bottom-0 z-10 flex justify-center bg-gradient-to-t from-neutral-900/50 to-transparent sm:hidden">
+      <nav className="container pointer-events-auto relative m-4 flex max-w-xl snap-x items-stretch overflow-x-auto overflow-y-hidden rounded-xl bg-neutral-800/80 p-1 shadow-lg shadow-black/50 backdrop-blur-sm sm:snap-none">
         <ThemeToggle />
         {[1, 2, 3, 4].map(item => (
           <NavItem

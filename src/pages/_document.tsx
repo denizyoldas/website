@@ -42,7 +42,7 @@ export default class MyDocument extends NextDocument {
           )}
         </Head>
 
-        <body className="bg-white text-zinc-600 antialiased dark:bg-neutral-900 dark:text-neutral-300 transition-colors duration-200 ease-in-out font-sans">
+        <body className="bg-white font-sans text-zinc-600 antialiased transition-colors duration-200 ease-in-out dark:bg-neutral-900 dark:text-neutral-300">
           <Main />
           <NextScript />
         </body>

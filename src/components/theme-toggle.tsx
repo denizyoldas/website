@@ -22,7 +22,7 @@ const ThemeToggle = () => {
           theme === 'dark' || resolvedTheme === 'dark' ? 'light' : 'dark'
         )
       }
-      className="bg-purple-400 hover:bg-purple-300 dark:bg-yellow-400 p-2 rounded-md hover:dark:bg-yellow-300"
+      className="rounded-md bg-purple-400 p-2 hover:bg-purple-300 dark:bg-yellow-400 hover:dark:bg-yellow-300"
     >
       {mounted && (theme === 'dark' || resolvedTheme === 'dark') ? (
         <BsFillSunFill color="black" />

@@ -15,7 +15,7 @@ const MENU = {
 function Header() {
   return (
     // hidden sm:flex
-    <header className="flex prose dark:prose-invert container mx-auto p-4 pb-5 flex-row justify-between items-center">
+    <header className="container prose mx-auto flex flex-row items-center justify-between p-4 pb-5 dark:prose-invert">
       <Head>
         <title>Deniz Aksu - Home</title>
       </Head>

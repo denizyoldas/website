@@ -13,12 +13,12 @@ const ProjectItem: React.FC<IProject> = ({
   createdAt
 }) => {
   return (
-    <li className="group flex flex-col items-center drop-shadow-lg text-center py-4 px-6 bg-white dark:bg-neutral-900 max-w-md">
+    <li className="group flex max-w-md flex-col items-center bg-white py-4 px-6 text-center drop-shadow-lg dark:bg-neutral-900">
       <a href={url} target="_blank" rel="nopper noreferrer">
         <Image
           src={image}
           alt={name}
-          className="w-full h-auto rounded-md object-contain"
+          className="h-auto w-full rounded-md object-contain"
           width={400}
           height={300}
         />
@@ -31,7 +31,7 @@ const ProjectItem: React.FC<IProject> = ({
           {technologies.map(tech => (
             <span
               key={tech}
-              className="text-xs dark:bg-gray-700 dark:text-white bg-gray-200 rounded-md py-1 px-2"
+              className="rounded-md bg-gray-200 py-1 px-2 text-xs dark:bg-gray-700 dark:text-white"
             >
               {tech}
             </span>

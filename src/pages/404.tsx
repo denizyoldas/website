@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from 'next/head'
 
 function Error() {
   return (
@@ -8,7 +8,7 @@ function Error() {
       </Head>
       <h1>Command not found</h1>
     </>
-  );
+  )
 }
 
-export default Error;
+export default Error

@@ -125,8 +125,8 @@ const Projects = () => {
         <title>Deniz Aksu - Projects</title>
         <meta name="description" content="Geliştirdiğim projelerin listesi" />
       </Head>
-      <h3 className="underline underline-offset-4 pt-3">Projeler</h3>
-      <ul className="grid grid-flow-row gap-10 place-items-center">
+      <h3 className="pt-3 underline underline-offset-4">Projeler</h3>
+      <ul className="grid grid-flow-row place-items-center gap-10">
         {PROJECTS.map(project => (
           <ProjectItem key={project.id} {...project} />
         ))}

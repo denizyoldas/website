@@ -13,3 +13,11 @@
 * {
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
+
+.hightlight {
+  @apply text-purple-600 dark:text-yellow-500;
+}
+
+.hightlight-hover {
+  @apply hover:text-purple-600 dark:hover:text-yellow-500;
+}
