@@ -1,6 +1,7 @@
 import TechIcon from './UI/tech-icon'
 
 import { Skill } from 'src/types/skill'
+import React from 'react'
 
 const SKILLS: Skill[] = [
   { tech: 'Angular', logo: 'angular', color: 'red' },
@@ -24,15 +25,10 @@ export default function TechStack() {
       <h4 className="underline-offset-3 pt-3 underline">Yetenekler</h4>
       <div className="flex flex-wrap">
         {SKILLS.map(item => (
-          <>
-            <TechIcon
-              tech={item.tech}
-              key={item.tech}
-              logo={item.logo}
-              color={item.color}
-            />
+          <React.Fragment key={item.tech}>
+            <TechIcon tech={item.tech} logo={item.logo} color={item.color} />
             &nbsp;
-          </>
+          </React.Fragment>
         ))}
       </div>
     </>

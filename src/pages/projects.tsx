@@ -26,6 +26,24 @@ const PROJECTS: IProject[] = [
   },
   {
     id: nanoid(),
+    name: 'Jahzali Website',
+    description: 'Arapça ve İngilizce dil desteği olan bir web sitesi.',
+    url: 'https://jahzali-website.vercel.app/',
+    image: '/jahzali-website.png',
+    technologies: ['Next.js', 'TypeScript', 'tailwindcss', 'Figma'],
+    createdAt: new Date('2022-12-05')
+  },
+  {
+    id: nanoid(),
+    name: 'Digital Agancy',
+    description: 'Digital Agancy web sitesi tasarımı.',
+    url: 'https://agency-landing-sigma.vercel.app/',
+    image: '/agency-landing.png',
+    technologies: ['Next.js', 'TypeScript', 'tailwindcss', 'Figma'],
+    createdAt: new Date('2022-12-19')
+  },
+  {
+    id: nanoid(),
     name: 'Mai Organizasyon',
     description:
       'Mai Organizasyon web sitesi tasarımı, kodlanması ve google işletmem hesabı kurulumu.',
