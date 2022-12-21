@@ -8,7 +8,7 @@ const PROJECTS: IProject[] = [
     id: nanoid(),
     name: 'siparislio.com',
     description: `
-    Siparlio e-ticaret sitesinde Next.JS kullanarak
+    Siparislio e-ticaret sitesinde Next.JS kullanarak
     geliştirmeler yaptım. Bu projede Next.JS, Redux, 
     react-hook-form, gibi teknolojileri kullandım. Ödeme entegrasyonu, admin paneli yeni featurelar eklenmesi,
     ürünlerin listelenmesi, filtrelenmesi, aranması gibi işlemleri yaptım. Bunun yanı sıra vercel config ve seri deployment ayarları yaptım.`,
