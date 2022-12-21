@@ -10,9 +10,10 @@ const ContactDetail: React.FC = () => {
         Benimle iletişime geçmek için
       </h3>
       <p>
-        Geliştirdiğim projeleri takip etmek isterseniz github&apos;a, attığım
-        tweetlere bakmak için twitter hesabıma bakabilirsiniz. Detaylı iletişim
-        için mail ile ulaşım sağlayabilirsiniz.
+        Geliştirdiğim projeleri takip etmek isterseniz, github hesabıma ve
+        attığım tweetlere twitter hesabımda bakabilirsiniz. Eğer detaylı
+        iletişim kurmak isterseniz, mail yoluyla benimle iletişim
+        kurabilirsiniz.
       </p>
       {/* <div className="flex place-content-center">
         <div className="flex w-1/3 flex-row justify-evenly">

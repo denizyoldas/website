@@ -21,13 +21,14 @@ const AboutPage = () => {
         >
           Apsiyon
         </a>{' '}
-        şirketinde Frontend Developer olarak çalışıyorum. 2018 yılından beri
-        yazılım sektöründe çalışıyorum. 2016 yılından beri de web teknolojileri
-        üzerine çalışmalar yapıyorum. Çalışma hayatımın ilk yıllarında C# ile
-        yazılım geliştirmeye başladım. 2017 yılında web teknolojileri üzerine
-        yoğunlaştım. 2018 yılında ise Angular ile yazılım geliştirmeye başladım.
-        2019 yılından bu yana ise React, NextJS ve Angular ile yazılım
-        geliştirmeye devam ediyorum.
+        şirketinde Frontend Developer olarak çalışıyorum. Meslek lisesinde
+        okurken, bir staj ile yazılım geliştirmeye başladım ve Full-Stack
+        pozisyonunda görev aldım. Mezun olduktan sonra üniversite eğitimine
+        devam ederken aynı zamanda çalışmaya da devam ettim. Özellikle start-up
+        şirketlerinde çalıştım ve kariyerimde önemli deneyimler kazandım.
+        Üniversite eğitimimi tamamladıktan sonra, Front-End Developer olarak
+        kariyerimine devam ediyorum ve mesleki yeteneklerimi geliştirmeye
+        çalışıyorum.
       </p>
       <h4 className="underline-offset-3 underline">Deneyim</h4>
       <AboutExperiances />
