@@ -4,6 +4,12 @@ import '@/styles/globals.css'
 import { meta } from 'site.config'
 import Script from 'next/script'
 import 'nprogress/nprogress.css'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: meta.title,
+  description: meta.description
+}
 
 export default async function Layout({ children }) {
   return (

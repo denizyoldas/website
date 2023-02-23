@@ -1,5 +1,6 @@
 import AboutExperiances from '@/components/about-experiances'
 import Container from '@/components/container'
+import { Metadata } from 'next'
 
 const SKILLS = [
   'Angular',
@@ -15,6 +16,10 @@ const SKILLS = [
   'TypeScript',
   'Go'
 ]
+
+export const metadata: Metadata = {
+  title: 'Deniz Aksu | About'
+}
 
 const AboutPage = () => {
   return (

@@ -1,6 +1,11 @@
 import Container from '@/components/container'
 import PostItem from '@/components/post-item'
 import { getDatabase } from '@/lib/notion'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Deniz Aksu - Blog'
+}
 
 async function fetchData() {
   const databases = await getDatabase('243c6492-4194-4ebd-9cbf-6894da4df1e7')

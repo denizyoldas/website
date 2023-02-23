@@ -2,6 +2,11 @@ import { nanoid } from 'nanoid'
 import { IProject } from 'types/project'
 import ProjectItem from '@/components/project-item'
 import Container from '@/components/container'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Deniz Aksu - Projects'
+}
 
 const PROJECTS: IProject[] = [
   {
