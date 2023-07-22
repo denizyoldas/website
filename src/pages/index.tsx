@@ -19,8 +19,8 @@ export default function Index() {
         <h3 className="underline underline-offset-4">Kısaca</h3>
         <p>
           Merhaba, ben Deniz Aksu. Şu anda{' '}
-          <a href="https://www.apsiyon.com/" className="hightlight">
-            Apsiyon
+          <a href="https://www.ddtech.com.tr/" className="hightlight">
+            DDTECH
           </a>{' '}
           şirketinde Frontend Developer olarak çalışıyorum. Kendimi geliştirmek
           için bir çok side project yapmaktayım. Bu projeleri{' '}

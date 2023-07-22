@@ -6,7 +6,15 @@ const EXPERIANCES = [
   {
     key: nanoid(),
     title: 'Front-End Developer',
-    subTitle: 'Apsiyon · Kasım 2022 - Mevcut',
+    subTitle: 'DDTECH · Mayıs 2023 - Devam Ediyor',
+    detailList: [
+      'Development of an admin panel for the "Know Your X" project utilizing React, Material-UI (MUI), React-Query, Redux, and Axios.'
+    ]
+  },
+  {
+    key: nanoid(),
+    title: 'Front-End Developer',
+    subTitle: 'Apsiyon · Kasım 2022 - Mayıs 2023',
     detailList: [
       'Apsiyon legacy projesinde, yönetim paneli kısmında jquery kullanarak geliştirmeler yaptım. Gerektiğinde de Vanilla.JS kullandım.',
       'Apsis UI, Account ve ApsiPay gibi projelerde, içerisinde bulunan micro frontend sayesinde geliştirmeler yaptım. Bu projelerde, micro frontend teknolojisini kullanarak mesleki becerilerimi geliştirme fırsatı buldum.'

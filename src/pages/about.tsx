@@ -16,10 +16,10 @@ const AboutPage = () => {
       <p>
         Merhaba, ben Deniz Aksu. Şu anda{' '}
         <a
-          href="https://www.apsiyon.com"
+          href="https://www.ddtech.com.tr/"
           className="text-purple-600 dark:text-yellow-500"
         >
-          Apsiyon
+          DDTECH
         </a>{' '}
         şirketinde Frontend Developer olarak çalışıyorum. Meslek lisesinde
         okurken, bir staj ile yazılım geliştirmeye başladım ve Full-Stack
