@@ -15,38 +15,24 @@ const ContactDetail: React.FC = () => {
         iletişim kurmak isterseniz, mail yoluyla benimle iletişim
         kurabilirsiniz.
       </p>
-      {/* <div className="flex place-content-center">
-        <div className="flex w-1/3 flex-row justify-evenly">
-          <A
-            blank={true}
-            href="https://github.com/denizyoldas"
-            aria-label="github"
-          >
-            <BsGithub size={24} className="hightlight-hover" />
-          </A>
-          <A
-            blank={true}
-            href="https://twitter.com/yoldasaksu"
-            area-label="twitter"
-          >
-            <BsTwitter size={24} className="hightlight-hover" />
-          </A>
-          <A
-            blank={true}
-            href="https://www.linkedin.com/in/denizyoldas/"
-            area-label="linkedin"
-          >
-            <BsLinkedin size={24} className="hightlight-hover" />
-          </A>
-          <A
-            blank={true}
-            href="mailto:daksu30@gmail.com?subject=Web Sitesi Üzerinden"
-            area-label="email"
-          >
-            <AiTwotoneMail size={24} className="hightlight-hover" />
-          </A>
-        </div>
-      </div> */}
+      <div className="mt-4 flex justify-center gap-6">
+        <A blank={true} href="https://github.com/denizyoldas" aria-label="github">
+          <BsGithub size={28} className="hightlight-hover" />
+        </A>
+        <A blank={true} href="https://twitter.com/yoldasaksu" area-label="twitter">
+          <BsTwitter size={28} className="hightlight-hover" />
+        </A>
+        <A blank={true} href="https://www.linkedin.com/in/denizyoldas/" area-label="linkedin">
+          <BsLinkedin size={28} className="hightlight-hover" />
+        </A>
+        <A
+          blank={true}
+          href="mailto:daksu30@gmail.com?subject=Web Sitesi Üzerinden"
+          area-label="email"
+        >
+          <AiTwotoneMail size={28} className="hightlight-hover" />
+        </A>
+      </div>
     </>
   )
 }

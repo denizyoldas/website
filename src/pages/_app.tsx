@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps, router }) {
     <ThemeProvider attribute="class">
       <NProgress />
       <Provider url={process.env.NEXT_PUBLIC_API_URL} options={options}>
-        <main className="min-h-screen bg-light dark:bg-neutral-900 dark:text-white">
+        <main className="min-h-screen bg-gradient-to-b from-purple-50 to-white dark:from-neutral-900 dark:to-neutral-800 dark:text-white">
           <Head>
             <title>Deniz Aksu</title>
             <meta
