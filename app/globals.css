@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0b0d10;
+  --panel: #111418;
+  --fg: #d7dde4;
+  --muted: #7d8794;
+  --line: #262b33;
+  --accent: #7ee787;
+  --link: #79c0ff;
+  --error: #ff7b72;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f4f5f7;
+    --panel: #ffffff;
+    --fg: #1f2328;
+    --muted: #656d76;
+    --line: #d8dee4;
+    --accent: #1a7f37;
+    --link: #0969da;
+    --error: #cf222e;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-link: var(--link);
+  --color-error: var(--error);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* Rendered markdown */
+.md > * + * { margin-top: 0.6em; }
+.md h1, .md h2, .md h3 { color: var(--accent); font-weight: 700; margin-top: 1.2em; }
+.md h1 { font-size: 1.4em; }
+.md h2 { font-size: 1.15em; }
+.md ul { list-style: "- "; padding-left: 1.5em; }
+.md ol { list-style: decimal; padding-left: 1.5em; }
+.md a { color: var(--link); text-decoration: underline; }
+.md strong { color: var(--fg); font-weight: 700; }
+.md code { color: var(--accent); }
+.md pre { background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 0.75em 1em; overflow-x: auto; }
+.md blockquote { border-left: 2px solid var(--line); padding-left: 1em; color: var(--muted); }
