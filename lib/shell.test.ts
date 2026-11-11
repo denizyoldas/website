@@ -12,7 +12,8 @@ const root: FsNode = {
       type: 'dir',
       children: [{ name: 'site.md', type: 'file', meta: { url: 'https://x.dev' }, html: '<p>hi</p>' }],
     },
-    { name: 'about.md', type: 'file', meta: { name: 'D', title: 'Dev', location: 'Ist' }, html: '<p>me</p>' },
+    { name: 'about.md', type: 'file', meta: { name: 'D', title: 'Dev', location: 'Ist', github: 'https://github.com/d' }, html: '<p>me</p>' },
+    { name: 'avatar.txt', type: 'file', text: ':-)' },
   ],
 }
 
@@ -40,6 +41,13 @@ test('chaining, open, clear, unknown', () => {
   assert.equal(run(root, [], 'open site').open, 'https://x.dev')
   assert.ok(run(root, [], 'ls && clear').clear)
   assert.equal(run(root, [], 'rm -rf /').out[0].kind, 'error')
+})
+
+test('whoami + txt files', () => {
+  const nf = run(root, [], 'whoami').out[0]
+  assert.ok(nf.kind === 'neofetch' && nf.art === ':-)')
+  assert.deepEqual(nf.rows, [['D', ''], ['Role', 'Dev'], ['Location', 'Ist'], ['GitHub', 'github.com/d']])
+  assert.deepEqual(run(root, [], 'cat avatar.txt').out, [{ kind: 'text', text: ':-)' }])
 })
 
 test('complete', () => {

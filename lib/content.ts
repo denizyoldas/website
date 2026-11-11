@@ -20,9 +20,11 @@ function toMeta(data: Record<string, unknown>): Meta {
 }
 
 function readFile(file: string): FsNode {
+  const name = displayName(path.basename(file))
+  if (file.endsWith('.txt')) return { name, type: 'file', text: fs.readFileSync(file, 'utf8').replace(/\s+$/, '') }
   const { data, content } = matter(fs.readFileSync(file, 'utf8'))
   return {
-    name: displayName(path.basename(file)),
+    name,
     type: 'file',
     meta: toMeta(data),
     html: marked.parse(content, { async: false }),
@@ -32,7 +34,7 @@ function readFile(file: string): FsNode {
 function readDir(dir: string): FsNode {
   const children = fs
     .readdirSync(dir, { withFileTypes: true })
-    .filter(d => !d.name.startsWith('.') && (d.isDirectory() || d.name.endsWith('.md')))
+    .filter(d => !d.name.startsWith('.') && (d.isDirectory() || /\.(md|txt)$/.test(d.name)))
     .sort((a, b) => Number(b.isDirectory()) - Number(a.isDirectory()) || a.name.localeCompare(b.name))
     .map(d => (d.isDirectory() ? readDir(path.join(dir, d.name)) : readFile(path.join(dir, d.name))))
   return { name: displayName(path.basename(dir)), type: 'dir', children }

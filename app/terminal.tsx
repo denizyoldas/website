@@ -144,6 +144,26 @@ function Output({ line, onRun }: { line: Line; onRun: (cmd: string) => void }) {
       return <div className="text-error">{line.text}</div>
     case 'html':
       return <div className="md my-1" dangerouslySetInnerHTML={{ __html: line.html }} />
+    case 'neofetch': {
+      const [[name], ...rows] = line.rows
+      return (
+        <div className="my-2 flex flex-wrap items-center gap-x-8 gap-y-3">
+          {line.art && (
+            <pre aria-hidden className="font-[inherit] text-[9px] leading-[1.15] text-accent sm:text-[11px]">{line.art}</pre>
+          )}
+          <div>
+            <div className="font-bold text-accent">{name}</div>
+            <div className="text-muted">{'-'.repeat(name.length)}</div>
+            {rows.map(([k, v]) => (
+              <div key={k}>
+                <span className="inline-block w-20 font-bold text-link">{k}</span>
+                {v}
+              </div>
+            ))}
+          </div>
+        </div>
+      )
+    }
     case 'meta': {
       const m = line.meta
       const heading = m.name ?? m.title
