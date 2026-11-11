@@ -8,6 +8,7 @@ export type FsNode = {
   children?: FsNode[]
   meta?: Meta
   html?: string
+  text?: string // plain text files (.txt), e.g. avatar.txt
 }
 
 export type Entry = { name: string; path: string; dir: boolean }
@@ -16,6 +17,7 @@ export type Line =
   | { kind: 'text'; text: string }
   | { kind: 'error'; text: string }
   | { kind: 'html'; html: string }
+  | { kind: 'neofetch'; art: string; rows: [string, string][] }
   | { kind: 'meta'; meta: Meta }
   | { kind: 'entries'; entries: Entry[] }
 
@@ -97,10 +99,22 @@ function runOne(root: FsNode, cwd: string[], input: string): Result {
     case 'whoami': {
       const about = find(root, ['about.md'])
       if (!about?.meta) return err('whoami: about.md not found')
+      const m = about.meta
+      const rows: [string, string][] = (
+        [
+          ['Role', m.title],
+          ['Location', m.location],
+          ['Email', m.email],
+          ['GitHub', m.github],
+          ['Web', m.website],
+        ] as [string, Meta[string] | undefined][]
+      )
+        .filter((r): r is [string, string] => typeof r[1] === 'string')
+        .map(([k, v]) => [k, v.replace(/^https?:\/\//, '')])
       return {
         cwd,
         out: [
-          { kind: 'text', text: `${about.meta.name} — ${about.meta.title} @ ${about.meta.location}` },
+          { kind: 'neofetch', art: find(root, ['avatar.txt'])?.text ?? '', rows: [[String(m.name), ''], ...rows] },
           { kind: 'html', html: about.html ?? '' },
           { kind: 'text', text: "Type 'help' or click a file below." },
         ],
@@ -126,6 +140,7 @@ function runOne(root: FsNode, cwd: string[], input: string): Result {
       if (!node) return err(`cat: ${arg}: No such file or directory`)
       if (node.type === 'dir') return err(`cat: ${arg}: Is a directory`)
       const out: Line[] = []
+      if (node.text != null) out.push({ kind: 'text', text: node.text })
       if (node.meta && Object.keys(node.meta).length) out.push({ kind: 'meta', meta: node.meta })
       if (node.html) out.push({ kind: 'html', html: node.html })
       return { cwd, out }
